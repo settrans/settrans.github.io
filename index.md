@@ -14,7 +14,7 @@ more than one of our professional translators when the job requires them.
 
 [Send us][contact-us] your file with `.docx`, `.pdf`, `.rtf`, `.txt`, 
 `.indd`, `.psd` format, `strings.xml` file, or any other file with text you 
-want us to translate! We will get back to you soon with our estimated price 
+want us to translate! We will get back to you soon with our price 
 and duration for the job.
 
   
@@ -35,7 +35,7 @@ profesional kami sekaligus apabila diperlukan.
 [Kirimkan][contact-us] berkas Anda dengan format `.docx`, `.pdf`, `.rtf`, 
 `.txt`, `.indd`, `.psd`, berkas `strings.xml`, atau berkas lainnya 
 yang berisi teks yang Anda ingin kami terjemahkan! Kami akan menghubungi 
-Anda kembali dan memberitahukan perkiraan harga dan waktu pengerjaannya.
+Anda kembali dan memberitahukan harga dan waktu pengerjaannya.
 
 
 [contact-us]: mailto:settrans.eits@gmail.com

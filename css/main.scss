@@ -20,6 +20,10 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$red-color: #CC0618;
+$red-color: lighten($red-color, 20%);
+$red-color-dark: darken($red-color, 15%);
+
 // Width of the content area
 $content-width:    800px;
 

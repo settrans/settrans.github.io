@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 5px solid $red-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -11,13 +11,13 @@
 }
 
 .site-title {
-    font-size: 36px;
+    font-family: "Pacifico";
+    font-size: 46px;
     font-weight: 400;
-    font-style: bold;
-    line-height: 56px;
+    line-height: 70px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 
     &,
     &:visited {
@@ -25,13 +25,26 @@
     }
 }
 
-.site-subtitle {
-    font-size: 16px;
+.site-subtitle-en {
+    font-size: 18px;
     font-weight: 300;
     font-style: italic;
-    line-height: 26px;
-    letter-spacing: -1px;
+    line-height: 8px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    margin-left: 40px;
+    float: left;
+}
+
+.site-subtitle-id {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 8px;
+    letter-spacing: 1px;
     margin-bottom: 0;
+    margin-left: 60px;
+    color: $grey-color-light;
     float: left;
 }
 
@@ -46,6 +59,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -116,6 +130,7 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 }
 
 .contact-list,

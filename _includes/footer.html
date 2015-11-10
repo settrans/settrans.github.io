@@ -8,7 +8,14 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+            {% include icon-email.html email=site.email %}
+          </li>
+          {% if site.phone %}
+          <li>
+            {% include icon-phone.html phone=site.phone %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 

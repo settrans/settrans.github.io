@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: SetTrans - Translation Services
+title: SetTrans Translation Services
 email: settrans.eits@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    Solution to your English-Indonesian language translation needs. 
    Not sure? Just ask us.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://settrans.github.io"
 
 # Build settings
 markdown: kramdown

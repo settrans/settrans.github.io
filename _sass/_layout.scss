@@ -12,7 +12,7 @@
 
 .site-title {
     font-family: "Pacifico";
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 70px;
     letter-spacing: -1px;
@@ -26,10 +26,10 @@
 }
 
 .site-subtitle-en {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-style: italic;
-    line-height: 8px;
+    line-height: 2px;
     letter-spacing: 1px;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     margin-left: 40px;
@@ -37,13 +37,13 @@
 }
 
 .site-subtitle-id {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-style: italic;
-    line-height: 8px;
+    line-height: 2px;
     letter-spacing: 1px;
-    margin-bottom: 0;
-    margin-left: 60px;
+    margin-top: -10px;
+    margin-left: 50px;
     color: $grey-color-light;
     float: left;
 }

@@ -12,7 +12,8 @@ subtitle_id: Jasa Penerjemahan
 email: settrans.eits@gmail.com
 phone: "+6285691306716"
 description: > # this means to ignore newlines until "baseurl:"
-   Solution to your English-Indonesian language translation needs. Not sure? Just ask us.
+   Solution to your English-Indonesian language translation needs. Not sure 
+   about hiring us? Just ask us!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://settrans.github.io"
 

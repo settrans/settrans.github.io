@@ -5,7 +5,7 @@ permalink: /our-services/
 ---
    
    
-### What you will get:  
+<span class="lato">What you will get:</span> 
 
 - Great quality translation
 - Monitoring of translation progress in almost real time through Google Docs
@@ -18,7 +18,7 @@ quality
 ---  
 <br/>     
 
-### Untuk Anda:
+<span class="lato">Untuk Anda:</span>
 
 - Terjemahan berkualitas sangat baik
 - Pengawasan terhadap pekerjaan yang sedang dilakukan melalui layanan Google

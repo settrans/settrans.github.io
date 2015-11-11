@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-####Projects that have been subcontracted to us include:  
+####Projects that were subcontracted to us include:  
 1. 40 pages of **2014 Annual Report of PT Angkasa Pura** (Indonesian state 
 enterprise for airport management) => `Indonesian to 
 English`  

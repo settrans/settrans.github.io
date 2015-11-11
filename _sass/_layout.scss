@@ -17,7 +17,7 @@
     line-height: 70px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
 
     &,
     &:visited {
@@ -48,9 +48,17 @@
     float: left;
 }
 
+.lato {
+    font-family: "Lato";
+    font-size: 24px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    color: $grey-color-dark;
+ }
+
 .site-nav {
     float: right;
     line-height: 56px;
+    margin-top: -40px;
 
     .menu-icon {
         display: none;
@@ -68,6 +76,7 @@
     }
 
     @include media-query($on-palm) {
+        margin-top: 10px;
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
@@ -125,11 +134,13 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: #2e3436;
 }
 
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    color: $grey-color-light;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 }
 

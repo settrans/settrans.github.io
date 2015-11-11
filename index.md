@@ -1,9 +1,10 @@
 ---
 layout: default
+parse_block_html: true
 ---
-  
-##English-Indonesian Translation Services  
 
+<span class="lato">English-Indonesian Translation Services</span>
+  
 Are you looking to translate your documents, websites, web apps, smartphone 
 apps, ads, or other media from English to Indonesian or vice versa? We can 
 give you rapid translations with great quality for an affordable price. Each
@@ -21,7 +22,7 @@ and duration for the job.
 ---  
 <br/> 
  
-##Jasa Penerjemahan Bahasa Indonesia-Inggris
+<span class="lato">Jasa Penerjemahan Bahasa Indonesia-Inggris</span>
 
 Anda butuh terjemahan untuk dokumen, situs, aplikasi web atau ponsel, iklan,
 atau media Anda lainnya dari Bahasa Inggris ke Indonesia atau sebaliknya? 

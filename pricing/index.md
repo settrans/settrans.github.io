@@ -13,7 +13,7 @@ IT, science, engineering, finance, etc.
 `0.031-0.050 USD/word`  
 [Contact us][contact-us] to get the exact price.  
 
-PS: We don't do translation for legal documents for the time being.  
+_PS: We don't do translation for legal documents for the time being._  
 
 ---  
 
@@ -26,6 +26,7 @@ sains, teknik, keuangan, dll.
 `Rp 350,- hingga Rp 550,- per kata`    
 [Hubungi kami][contact-us] untuk harga pastinya.   
 
-NB: Untuk saat ini kami masih belum melayani jasa penerjemahan teks hukum.
+_NB: Untuk saat ini kami masih belum melayani jasa penerjemahan teks 
+hukum._    
 
 [contact-us]: mailto:settrans.eits@gmail.com

@@ -1,10 +1,17 @@
 ---
 layout: page
 title: About
+menu: true
 permalink: /about/
 ---
 
-<span class="lato">{{ site.title }} {{ site.subtitle_en }}</span>
+<button type="button" id="lang-button">
+<span class="long">Bahasa</span><span class="short">ID</span>
+</button>
+
+{::options parse_block_html="true" /}
+<div class="content-en">
+<span class="playfair">{{ site.title }} {{ site.subtitle_en }}</span>
 
 SetTrans is a small Indonesian translation service company comprising of one
  main translator and several on-demand translators. The main translator has 
@@ -14,10 +21,9 @@ a certificate for English to Indonesian General Text Translator from
  [translation projects][portfolio] together with on-demand 
 translators with similar qualifications who can be employed when necessary.
 {: style="text-align: justify;"}
-
----
-<br/>
-<span class="lato">{{ site.subtitle_id }} {{ site.title }}</span>
+</div>
+<div class="content-id">
+<span class="playfair">{{ site.subtitle_id }} {{ site.title }}</span>
 
 SetTrans adalah sebuah perusahaan kecil Indonesia di bidang jasa 
 penerjemahan yang memiliki satu penerjemah utama dan beberapa tambahan 
@@ -28,6 +34,7 @@ nilai skor TOEFL® ITP lebih dari 600, dan telah mengerjakan beberapa
 penerjemah tambahan yang memiliki kualifikasi serupa yang dapat dipekerjakan
  manakala diperlukan.
 {: style="text-align: justify;"}
+</div>
 
 
 [lbi-fib-ui]: http://lbifib.ui.ac.id/ "LBI FIB UI" 

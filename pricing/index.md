@@ -1,9 +1,16 @@
 ---
 layout: page
 title: Pricing
+menu: true
 permalink: /pricing/
 ---
 
+<button type="button" id="lang-button">
+<span class="long">Bahasa</span><span class="short">ID</span>
+</button>
+
+{::options parse_block_html="true" /}
+<div class="content-en">
 **General Texts**:  
 `0.027 USD/word`  
 
@@ -14,10 +21,9 @@ IT, science, engineering, finance, etc.
 [Contact us][contact-us] to get the exact price.  
 
 _PS: We don't do translation for legal documents for the time being._  
-
----  
-
-<br/>**Teks Umum**:  
+</div>
+<div class="content-id">
+**Teks Umum**:  
 `Rp 300,-/kata`   
 
 **Teks Khusus**:  
@@ -28,5 +34,6 @@ sains, teknik, keuangan, dll.
 
 _NB: Untuk saat ini kami masih belum melayani jasa penerjemahan teks 
 hukum._    
+</div>
 
 [contact-us]: mailto:settrans.eits@gmail.com

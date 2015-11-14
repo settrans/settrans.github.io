@@ -1,6 +1,13 @@
 /**
  * Site header
  */
+
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
 .site-header {
     border-top: 5px solid $red-color-dark;
     border-bottom: 1px solid $grey-color-light;
@@ -48,41 +55,53 @@
     float: left;
 }
 
-.lato {
-    font-family: "Lato";
-    font-size: 24px;
+.playfair {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    letter-spacing: 1px;    
     text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
     color: $grey-color-dark;
- }
-
-.lato-404 {
-    font-family: "Lato";
-    font-size: 100px;
-    text-align: center;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
-    color: $grey-color-dark;
-    margin-top: -404px;
-    line-height: 100px;
 
     @include media-query($on-palm) {
-       font-size: 55px;
-       margin-top: -270px;
+      font-size: 18px;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    }
+ }
+
+.playfair-404 {
+    font-family: "Playfair Display";
+    font-size: 110px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    color: $grey-color-dark;
+    margin-top: -420px;
+    line-height: 90px;
+
+    @include media-query($on-laptop) {
+       font-size: 65px;
+       margin-top: -290px;
+       line-height: 55px;
+    }
+
+    @include media-query($on-palm) {
+       font-size: 65px;
+       margin-top: -290px;
        line-height: 55px;
     }
  }
 
-.lato-sorry {
-    font-family: "Lato";
+.playfair-sorry {
+    font-family: "Playfair Display";
     font-size: 24px;
     text-align: center;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     color: $grey-color-dark;
-    margin-top: 30px;
-    margin-bottom: -40px;
+    margin-top: 60px;
+    margin-bottom: -30px;
 
     @include media-query($on-palm) {
        font-size: 16px;
-       margin-bottom: -20px;
+       margin-top: 40px;
     }
  }
 
@@ -90,6 +109,7 @@
     float: right;
     line-height: 56px;
     margin-top: -40px;
+    z-index: 1;
 
     .menu-icon {
         display: none;
@@ -98,11 +118,11 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-        text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+           margin-right: 20px;
         }
     }
 
@@ -236,7 +256,13 @@
  * Page content
  */
 .page-content {
+    position: relative;
     padding: $spacing-unit 0;
+    min-height: 49%;
+
+    @include media-query($on-palm) {
+       min-height: 38%;
+    }
 }
 
 .page-heading {
@@ -262,7 +288,47 @@
     font-size: 24px;
 }
 
+#lang-button {
+  float: right;
+  margin-top: 5px;
+  margin-left: 15px;
+  background: $red-color-dark;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  border: 1px solid $red-color-dark;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px 10px 5px 10px;
 
+  .short {
+     display: none;
+  }
+   
+  @include media-query($on-palm) {
+     .long {
+        display: none;
+     }
+
+     .short {
+        display: block;
+     }
+  }
+}
+
+#lang-button:hover {
+  background: none;
+  color: $red-color-dark;
+}
+
+.content-en {
+   display: block;
+}
+
+.content-id {
+   display: none;
+}
 
 /**
  * Posts

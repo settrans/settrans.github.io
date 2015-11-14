@@ -1,11 +1,17 @@
 ---
 layout: page
 title: Our Services
+menu: true
 permalink: /our-services/
 ---
    
-   
-<span class="lato">What you will get:</span> 
+<button type="button" id="lang-button">
+<span class="long">Bahasa</span><span class="short">ID</span>
+</button>
+
+{::options parse_block_html="true" /}
+<div class="content-en">
+<span class="playfair">What you will get:</span> 
 
 - Great quality translation
 - Monitoring of translation progress in almost real time through Google Docs
@@ -14,11 +20,9 @@ services
 - One time translation revision based on comments without degrading the 
 quality
 - Progressive discount if the job is more than 2,000 words
-
----  
-<br/>     
-
-<span class="lato">Untuk Anda:</span>
+</div>
+<div class="content-id">
+<span class="playfair">Untuk Anda:</span>
 
 - Terjemahan berkualitas sangat baik
 - Pengawasan terhadap pekerjaan yang sedang dilakukan melalui layanan Google
@@ -27,3 +31,4 @@ quality
 - Satu kali perbaruan terjemahan berdasarkan komentar yang diberikan tanpa 
 mengurangi kualitasnya
 - Diskon progresif untuk pekerjaan lebih dari 2.000 kata
+</div>

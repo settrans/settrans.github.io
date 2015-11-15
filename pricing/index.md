@@ -11,10 +11,10 @@ permalink: /pricing/
 
 {::options parse_block_html="true" /}
 <div class="content-en">
-**General Texts**:  
+<span class="playfair darkslateblue">General Texts:</span>  
 `0.027 USD/word`  
 
-**Niche Subject Texts**:  
+<span class="playfair darkgoldenrod">Niche Subject Texts:</span>  
 For documents/article/paper/book with a specialized subject such as 
 IT, science, engineering, finance, etc.  
 `0.031-0.050 USD/word`  
@@ -23,10 +23,10 @@ IT, science, engineering, finance, etc.
 _PS: We don't do translation for legal documents for the time being._  
 </div>
 <div class="content-id">
-**Teks Umum**:  
+<span class="playfair darkslateblue">Teks Umum:</span>  
 `Rp 300,-/kata`   
 
-**Teks Khusus**:  
+<span class="playfair darkgoldenrod">Teks Khusus:</span>  
 Untuk dokumen/artikel/karya ilmiah/buku di bidang yang khusus seperti TI, 
 sains, teknik, keuangan, dll.   
 `Rp 350,- hingga Rp 550,- per kata`    

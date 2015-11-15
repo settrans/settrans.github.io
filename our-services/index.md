@@ -11,7 +11,7 @@ permalink: /our-services/
 
 {::options parse_block_html="true" /}
 <div class="content-en">
-<span class="playfair">What you will get:</span> 
+<span class="playfair darkgoldenrod">What you will get:</span> 
 
 - Great quality translation
 - Monitoring of translation progress in almost real time through Google Docs
@@ -22,7 +22,7 @@ quality
 - Progressive discount if the job is more than 2,000 words
 </div>
 <div class="content-id">
-<span class="playfair">Untuk Anda:</span>
+<span class="playfair darkgoldenrod">Untuk Anda:</span>
 
 - Terjemahan berkualitas sangat baik
 - Pengawasan terhadap pekerjaan yang sedang dilakukan melalui layanan Google

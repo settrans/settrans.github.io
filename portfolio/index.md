@@ -11,7 +11,7 @@ permalink: /portfolio/
 
 {::options parse_block_html="true" /}
 <div class="content-en">
-<span class="playfair">Projects that were subcontracted to us include:</span>
+<span class="playfair crimson">Projects that were subcontracted to us include:</span>
 
 1. 40 pages of **2014 Annual Report of PT Angkasa Pura** (Indonesian state 
 enterprise for airport management) => `Indonesian to 
@@ -23,7 +23,7 @@ Training)" => `English to Indonesian`
 {: style="text-align: justify;"}
 </div>
 <div class="content-id">
-<span class="playfair">Proyek-proyek subkontrak yang telah kami kerjakan:</span>
+<span class="playfair crimson">Proyek-proyek subkontrak yang telah kami kerjakan:</span>
 
 1. 40 halaman **Laporan Tahunan 2014 PT Angkasa Pura** => `Bahasa Indonesia ke Bahasa Inggris`  
 2. 21 halaman **Pengarahan Teknis Mengenai Pembelajaran USAID IFACS**: 

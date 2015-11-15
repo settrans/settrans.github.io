@@ -59,12 +59,11 @@ html, body {
     font-family: "Playfair Display";
     font-size: 20px;
     letter-spacing: 1px;    
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     color: $grey-color-dark;
 
     @include media-query($on-palm) {
       font-size: 18px;
-      text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     }
  }
 
@@ -104,6 +103,50 @@ html, body {
        margin-top: 40px;
     }
  }
+
+.burlywood {
+   color: #DEB887;
+}
+
+.olivedrab {
+   color: #6B8E23;
+}
+
+.lawngreen {
+   color: #7CFC00;
+}
+
+.royalblue {
+   color: #4169E1;
+}
+
+.tan {
+   color: #D2B48C;
+}
+
+.crimson {
+   color: #DC143C;
+}
+
+.darkgoldenrod {
+   color: #B8860B;
+}
+
+.salmon {
+   color: #FA8072;
+}
+
+.rebeccapurple {
+   color: #663399;
+}
+
+.slategray {
+   color: #708090;
+}
+
+.darkslateblue {
+   color: #483D8B;
+}
 
 .site-nav {
     float: right;

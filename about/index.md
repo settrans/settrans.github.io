@@ -11,7 +11,7 @@ permalink: /about/
 
 {::options parse_block_html="true" /}
 <div class="content-en">
-<span class="playfair">{{ site.title }} {{ site.subtitle_en }}</span>
+<span class="playfair darkslateblue">{{ site.title }} {{ site.subtitle_en }}</span>
 
 SetTrans is a small Indonesian translation service company comprising of one
  main translator and several on-demand translators. The main translator has 
@@ -23,7 +23,7 @@ translators with similar qualifications who can be employed when necessary.
 {: style="text-align: justify;"}
 </div>
 <div class="content-id">
-<span class="playfair">{{ site.subtitle_id }} {{ site.title }}</span>
+<span class="playfair darkslateblue">{{ site.subtitle_id }} {{ site.title }}</span>
 
 SetTrans adalah sebuah perusahaan kecil Indonesia di bidang jasa 
 penerjemahan yang memiliki satu penerjemah utama dan beberapa tambahan 

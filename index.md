@@ -8,7 +8,7 @@ layout: default
 
 {::options parse_block_html="true" /}
 <div class="content-en">
-<span class="playfair">English-Indonesian Translation Services</span>
+<span class="playfair darkslateblue">English-Indonesian Translation Services</span>
   
 Are you looking to translate your documents, websites, web apps, smartphone 
 apps, ads, or other media from English to Indonesian or vice versa?   
@@ -18,7 +18,7 @@ price.
 
 <br />
 
-<span class="playfair">Our Translators</span>
+<span class="playfair slategray">Our Translators</span>
   
 Each of our translators is certified and is able to get through 1,500-2,500 
 words per day. We provide technical, marketing, academic, business, 
@@ -29,7 +29,7 @@ requires them.
 
 <br />
 
-<span class="playfair">Get A Free Quote</span>
+<span class="playfair royalblue">Get A Free Quote</span>
   
 [Send us][contact-us] your file with `.docx`, `.pdf`, `.rtf`, `.txt`, 
 `.indd`, `.psd` format, `strings.xml` file, [CAT][cat-wiki] tools format, 
@@ -39,7 +39,7 @@ you soon with our discounted price and duration for the job.
 
 <br />
 
-<span class="playfair">Other Services</span>
+<span class="playfair darkgoldenrod">Other Services</span>
   
 In addition to translating, we also do editing and proofreading for your 
 translation texts. These works can be charged by the hour or by word 
@@ -48,7 +48,7 @@ count depending on the initial agreement.
 
 <br />
 
-<span class="playfair">Interpreting</span>
+<span class="playfair olivedrab">Interpreting</span>
   
 We don't do interpreting at the moment, but we expect to change that in 
 not so distant future. Be sure to check this site back when you need the 
@@ -57,7 +57,7 @@ service later.
 </div>  
 
 <div class="content-id">
-<span class="playfair">Layanan Penerjemahan Bahasa Indonesia-Inggris</span>
+<span class="playfair darkslateblue">Layanan Penerjemahan Bahasa Indonesia-Inggris</span>
 
 Anda butuh menerjemahkan dokumen, situs, aplikasi web atau ponsel, iklan,
 atau media Anda lainnya dari Bahasa Inggris ke Indonesia atau sebaliknya? 
@@ -67,7 +67,7 @@ Kami dapat memberikan Anda pelayanan penerjemahan yang cepat dengan kualitas
 
 <br />
 
-<span class="playfair">Penerjemah Kami</span>
+<span class="playfair slategray">Penerjemah Kami</span>
 
 Semua penerjemah bersertifikat dan dapat 
 menyelesaikan 1.500-2.500 kata per hari. Kami menyediakan layanan 
@@ -78,7 +78,7 @@ profesional kami sekaligus apabila diperlukan.
 
 <br />
 
-<span class="playfair">Dapatkan Penawaran Kami</span>
+<span class="playfair royalblue">Dapatkan Penawaran Kami</span>
 
 [Kirimkan][contact-us] berkas Anda dengan format `.docx`, `.pdf`, `.rtf`, 
 `.txt`, `.indd`, `.psd`, berkas `strings.xml`, format yang digunakan 
@@ -89,7 +89,7 @@ memberitahukan harga diskonnya dan waktu pengerjaannya.
 
 <br />
 
-<span class="playfair">Layanan Lainnya</span>
+<span class="playfair darkgoldenrod">Layanan Lainnya</span>
 
 Selain menerjemahkan, kami juga memberikan layanan penyuntingan dan 
 pengkoreksian hasil terjemahan Anda. Pekerjaan ini bisa dibebankan per jam 
@@ -98,7 +98,7 @@ atau per kata, tergantung kesepakatan awal.
 
 <br />
 
-<span class="playfair">Penjurubahasaan</span>
+<span class="playfair olivedrab">Penjurubahasaan</span>
 
 Kami tidak melakukan penjurubahasaan untuk saat ini, tetapi kami berharap 
 bisa melakukan pelayanan tersebut dalam waktu dekat. Pastikan Anda mengecek 

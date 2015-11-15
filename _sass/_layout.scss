@@ -6,6 +6,13 @@ html, body {
    margin:0;
    padding:0;
    height:100%;
+
+
+   background: #FFEEEE; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to bottom, #F0FFFF, #FFEEEE); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to bottom, #F0FFFF, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-attachment: fixed;
+           
 }
 
 .site-header {
@@ -58,7 +65,7 @@ html, body {
 .playfair {
     font-family: "Playfair Display";
     font-size: 20px;
-    letter-spacing: 1px;    
+    letter-spacing: 3px;    
     text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     color: $grey-color-dark;
 

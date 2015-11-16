@@ -1,9 +1,14 @@
-<header class="site-header">
+<header class="site-header darkgraybg">
 
   <div class="wrapper">
      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a><br />
      <span class="site-subtitle-en">{{ site.subtitle_en }}</span><br />  
      <span class="site-subtitle-id">{{ site.subtitle_id }}</span>
+
+      <button type="button" id="lang-button">
+<span class="long">Bahasa</span><span class="short">ID</span>
+</button>
+
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -13,7 +18,7 @@
         </svg>
       </a>
 
-      <div class="trigger" id="sticky">
+         <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.menu %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
@@ -28,12 +33,13 @@
          $("#lang-button").click(function(){
            en = "\n<span class=\"long\">English</span><span class=\"short\">EN</span>\n";
            id = "\n<span class=\"long\">Bahasa</span><span class=\"short\">ID</span>\n";
-            $(".content-en").toggle();
             $(".content-id").toggle();
+            $(".content-en").toggle();
              $(this).html(function(i, html){
                return html == id ? en : id;
              })
          });
+         $('.page-content').fullpage();
       });
   </script>
 </header>

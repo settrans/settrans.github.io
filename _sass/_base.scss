@@ -11,8 +11,6 @@ dl, dd, ol, ul, figure {
 
 
 /**
- * Basic styling
- */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -131,11 +129,12 @@ blockquote {
  */
 pre,
 code {
-    font-size: 14px;
-    border: 1px solid $grey-color-light;
+    font-size: 98%;
+    font-family: "Source Code Pro";
+    border: 1px solid rgba(238,238,255,0.9);
     border-radius: 3px;
-    background-color: #eef;
-    color: $red-color;
+    background-color: rgba(238,238,255,0.9);
+    color: rgba(204,6,24,0.8);
 }
 
 code {

@@ -11,6 +11,7 @@ html, body {
 .site-header {
     border-top: 5px solid $red-color-dark;
     min-height: 46px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.25);
     z-index: 1;
 
     // Positioning context for the mobile navigation icon
@@ -26,6 +27,7 @@ html, body {
     text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
     color: $red-color-dark;
     float: left;
+    margin-bottom: -28px;
 
     &,
     &:visited {
@@ -37,12 +39,13 @@ html, body {
 }
 
 .site-subtitle-en {
-    font-size: 10px;
-    font-weight: 300;
+    font-family: "Open Sans", "Helvetica Neue";
+    font-size: 9px;
+    font-weight: 400;
     font-style: italic;
     line-height: 2px;
     letter-spacing: 1px;
-    margin-top: -4px;
+    margin-top: 0px;
     margin-left: 5px;
     color: rgba(255,255,255,0.8);
     float: left;
@@ -53,12 +56,13 @@ html, body {
 }
 
 .site-subtitle-id {
-    font-size: 10px;
-    font-weight: 300;
+    font-family: "Open Sans", "Helvetica Neue";
+    font-size: 9px;
+    font-weight: 400;
     font-style: italic;
     line-height: 2px;
     letter-spacing: 1px;
-    margin-top: -18px;
+    margin-top: -10px;
     margin-left: 15px;
     color: rgba(255,255,255,0.5);
     float: left;
@@ -68,27 +72,26 @@ html, body {
     }
 }
 
-.home {
-   text-align: center;
-   text-shadow: 1px 1px 45px rgba(255,255,255,0.5);
-}
-
-.content-en {
-   line-height: 2.2;
-   display: block;
+.lang-hide {
+   display: none;
 }
 
 .content-id {
+   font-family: "Ubuntu";
    line-height: 2.2;
-   display: none;
+}
+
+.content-en {
+   font-family: "Ubuntu";
+   line-height: 2.2;
 }
 
 .playfair {
     font-family: "Open Sans";
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 1px;    
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.4);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 
     @include media-query($on-palm) {
@@ -136,7 +139,8 @@ html, body {
 .rimage {
    width: 40%;
    height: 40%;
-   margin-left: 40px;
+   padding-left: 4%;
+   padding-right: 3%;
    text-align: center;
    float: right;
 
@@ -146,15 +150,18 @@ html, body {
    }
 
    @include media-query($on-palm) {
+      float: none;
       width: 100%;
       height: 20%;
+      padding: 0%;
    }
 }
 
 .limage {
    width: 40%;
    height: 40%;
-   margin-right: 40px;
+   padding-right: 4%;
+   padding-left: 3%;
    text-align: center;
    float: left;
 
@@ -164,16 +171,18 @@ html, body {
    }
 
    @include media-query($on-palm) {
+      float: none;
       width: 100%;
       height: 20%;
+      padding: 0%;
    }
 }
 
 .rtext {
    width: 40%;
    height: 40%;
-   margin-left: 40px;
-   margin-right: 3%;
+   padding-left: 4%;
+   padding-right: 3%;
    float: right;
 
    p {
@@ -181,8 +190,10 @@ html, body {
    }
 
    @include media-query($on-palm) {
+      float: none;
       width: 100%;
       height: 40%;
+      padding: 0%;
       font-size: 14px;
    }
 }
@@ -190,15 +201,25 @@ html, body {
 .ltext {
    width: 40%;
    height: 40%;
-   margin-right: 40px;
-   margin-left: 3%;
+   padding-right: 4%;
+   padding-left: 3%;
    float: left;
 
    @include media-query($on-palm) {
+      float: none;
       width: 100%;
       height: 40%;
+      padding: 0%;
       font-size: 14px;
    }
+}
+
+.main {
+   position: relative;
+}
+
+.main::after {
+   background-image: url(/images/bg.jpg);
 }
 
 .section {
@@ -207,6 +228,57 @@ html, body {
 
    @include media-query($on-palm) {
       padding: 2% 5%;
+   }
+
+   .home {
+      text-align: center;
+      color: rgba(255,255,255,0.7);
+      text-shadow: 1px 1px 150px rgba(255,255,255,0.45);
+
+      a {
+         font-family: "Open Sans";
+         color: rgba(42,93,176,0.9); //#2A5DB0 
+         text-shadow: 0px 1px 2px rgba(255,255,255,0.25);
+      }
+   }
+
+   .home-title {
+      font-family: "Open Sans";
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1.1;
+      text-align: center;
+      color: rgba(255,255,255,0.6);
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.15);
+
+      @include media-query($on-palm) {
+         width: 100%;
+         height: 10%;
+         margin-top: 4%;
+         font-size: 16px;
+      }
+   }
+
+   .home-text {
+      font-size: 18px;
+      text-align: center;
+      line-height: 3;
+      margin-top: -10px;
+      color: rgba(255,255,255,0.7);
+      text-shadow: 1px 1px 100px rgba(255,255,255,0.45);
+
+      a {
+         font-family: "Open Sans";
+         color: rgba(142,93,176,0.8); //#2A5DB0 
+      }
+
+      @include media-query($on-palm) {
+         width: 100%;
+         height: 90%;
+         font-size: 14px;
+         margin-top: 14%;
+         line-height: 2.2;
+      }
    }
 }
 
@@ -217,27 +289,27 @@ html, body {
 }
 
 .mirage {
-   background: #16222A; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #16222A;
+   background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+   background: linear-gradient(to left, #16222A , #3A6073);
    }
 
-.parklife {
-   background: #3D7EAA; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to top left, #3D7EAA , #FFE47A); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to top left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.virgin-america {
+   background: #7b4397;
+   background: -webkit-linear-gradient(to left, #7b4397 , #dc2430);
+   background: linear-gradient(to left, #7b4397 , #dc2430);
 }
 
-.light-orange {
-   background: #FFB75E; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #FFB75E , #ED8F03); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #FFB75E , #ED8F03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.dirty-fog {
+   background: #B993D6;
+   background: -webkit-linear-gradient(to bottom right, #B993D6 , #8CA6DB);
+   background: linear-gradient(to bottom right, #B993D6 , #8CA6DB);
 }
 
-.turquoise-flow {
-   background: #136a8a; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #136a8a , #267871); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.ash {
+   background: #606c88;
+   background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b);
+   background: linear-gradient(to left, #606c88 , #3f4c6b);
 }
 
 .burlywood {
@@ -300,12 +372,12 @@ html, body {
 
 #lang-button {
   float: right;
-  margin-top: -40px;
+  margin-top: -22px;
   margin-left: 15px;
   background: $red-color-dark;
-  -webkit-border-radius: 1;
-  -moz-border-radius: 1;
-  border-radius: 1px;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
   border: 1px solid $red-color-dark;
   font-family: Arial;
   color: #ffffff;
@@ -341,13 +413,17 @@ html, body {
 
 #lang-button:active {
   box-shadow: none;
+  border: 1px dashed;
 }
 
 .site-nav {
+    font-family: "Open Sans";
     float: right;
     line-height: 56px;
-    margin-top: -20px;
-    margin-bottom: -10px;
+    font-size: 95%;
+    margin-top: -40px;
+    margin-right: 100px;
+    margin-bottom: -40px;
     z-index: 1;
 
     .menu-icon {
@@ -357,11 +433,11 @@ html, body {
     .page-link {
         color: rgba(255,255,255,0.8);
         line-height: $base-line-height;
-        text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+        text-shadow: 1px 1px 4px rgba(238,238,255,0.2);
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-           margin-right: 49px;
+           margin-right: 30px;
         }
     }
 

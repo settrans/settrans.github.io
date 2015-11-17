@@ -5,10 +5,6 @@ menu: true
 permalink: /portfolio/
 ---
 
-<button type="button" id="lang-button">
-<span class="long">Bahasa</span><span class="short">ID</span>
-</button>
-
 {::options parse_block_html="true" /}
 <div class="content-en">
 <span class="playfair crimson">Projects that were subcontracted to us include:</span>

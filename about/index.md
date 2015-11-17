@@ -5,10 +5,6 @@ menu: true
 permalink: /about/
 ---
 
-<button type="button" id="lang-button">
-<span class="long">Bahasa</span><span class="short">ID</span>
-</button>
-
 {::options parse_block_html="true" /}
 <div class="content-en">
 <span class="playfair darkslateblue">{{ site.title }} {{ site.subtitle_en }}</span>

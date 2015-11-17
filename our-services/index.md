@@ -4,10 +4,6 @@ title: Our Services
 menu: true
 permalink: /our-services/
 ---
-   
-<button type="button" id="lang-button">
-<span class="long">Bahasa</span><span class="short">ID</span>
-</button>
 
 {::options parse_block_html="true" /}
 <div class="content-en">

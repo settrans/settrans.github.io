@@ -1,35 +1,35 @@
 ---
-layout: page
+layout: default
 title: About
 menu: true
 permalink: /about/
 ---
 
 {::options parse_block_html="true" /}
-<div class="content-en">
-<span class="playfair darkslateblue">{{ site.title }} {{ site.subtitle_en }}</span>
+<script>
+   $(document).ready(function($) {
+      $('.page-content').closest('div.wrapper').removeClass('wrapper');
+      $('.section').wrapInner('<div class="wrapper"></div>');
+   });
+</script>
 
-SetTrans is a small Indonesian translation service company comprising of one
- main translator and several on-demand translators. The main translator has 
-a certificate for English to Indonesian General Text Translator from
- [Lembaga Bahasa Internasional FIB Universitas Indonesia][lbi-fib-ui],
- a TOEFL® ITP score of more than 600, and has done a couple of subcontracted
- [translation projects][portfolio] together with on-demand 
-translators with similar qualifications who can be employed when necessary.
-{: style="text-align: justify;"}
-</div>
-<div class="content-id">
-<span class="playfair darkslateblue">{{ site.subtitle_id }} {{ site.title }}</span>
+<div class="section inbox">
+<span class="playfair content-id lang-hide">{{ site.subtitle_id }} {{ site.title }}</span><span class="playfair content-en">{{ site.title }} {{ site.subtitle_en }}</span>
 
 SetTrans adalah sebuah perusahaan kecil Indonesia di bidang jasa 
-penerjemahan yang memiliki satu penerjemah utama dan beberapa tambahan 
-penerjemah jika diperlukan. Penerjemah utama memiliki sertifikat Penerjemah 
-Teks Umum Bahasa Inggris ke Bahasa Indonesia dari [LBI FIB UI][lbi-fib-ui], 
-nilai skor TOEFL® ITP lebih dari 600, dan telah mengerjakan beberapa 
-[proyek][portfolio] melalui subkontrak bersama dengan beberapa 
-penerjemah tambahan yang memiliki kualifikasi serupa yang dapat dipekerjakan
- manakala diperlukan.
-{: style="text-align: justify;"}
+penerjemahan yang memiliki satu penerjemah utama (purna waktu) dan beberapa 
+tambahan penerjemah (paruh waktu) jika diperlukan. Semua penerjemah 
+memiliki sertifikat Penerjemah Teks Umum Bahasa Inggris ke Bahasa Indonesia 
+dari [LBI FIB UI][lbi-fib-ui] dan telah mengerjakan beberapa 
+[proyek penerjemahan][portfolio] secara subkontrak.
+{: class="content-id lang-hide normal" style="text-align: justify;"}
+SetTrans is a small Indonesian translation service company comprising of one
+ main (full-time) translator and several on-demand (part-time) translators. 
+All translators have earned certificates for English to Indonesian 
+General Text Translator from [Lembaga Bahasa Internasional FIB Universitas 
+Indonesia][lbi-fib-ui] and completed a couple of subcontracted 
+[translation projects][portfolio]. 
+{: class="content-en normal" style="text-align: justify;"}
 </div>
 
 

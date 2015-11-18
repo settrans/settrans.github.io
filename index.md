@@ -3,6 +3,7 @@ layout: default
 ---
 
 {::options parse_block_html="true" /}
+<script src="/scripts/jquery.fullPage.min.js"></script>
 <script>
    $(document).ready(function(){
       function checkWidth() {
@@ -29,8 +30,8 @@ English-Indonesian Translation Services
 Ingin menerjemahkan   
 `dokumen`, `situs`, `aplikasi web`, `aplikasi ponsel`, `iklan`,  
 atau media Anda lainnya dari Bahasa Inggris ke Indonesia atau sebaliknya?  
-Kami dapat memberikan Anda pelayanan penerjemahan untuk teks Anda dengan  
-kualitas baik dan cepat serta dengan [harga yang terjangkau][price]. 
+Kami dapat memberikan Anda pelayanan penerjemahan yang cepat untuk  
+teks Anda dengan kualitas baik serta [harga yang terjangkau][price]. 
 {: class="content-id lang-hide home-text"}
 Looking to translate your  
 `documents`, `websites`, `web apps`, `smartphone apps`, `ads`,  
@@ -64,7 +65,7 @@ when the job requires them.
 </div>
 
 <div class="section virgin-america">
-<span class="playfair content-id lang-hide">Dapatkan Penawaran Kami</span><span class="playfair content-en">Get A Free Quote</span>
+<span class="playfair content-id lang-hide">Dapatkan Penawaran Gratis</span><span class="playfair content-en">Get A Free Quote</span>
 
 ![Free Quote][free-quote]  
 {: class="rimage"}  

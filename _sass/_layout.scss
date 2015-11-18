@@ -3,6 +3,7 @@
  */
 
 html, body {
+   background: #131516;
    margin:0;
    padding:0;
    height:100%;
@@ -90,8 +91,12 @@ html, body {
     font-size: 22px;
     line-height: 1.1;
     letter-spacing: 1px;    
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.5);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
 
     @include media-query($on-palm) {
       font-size: 18px;
@@ -148,11 +153,15 @@ html, body {
       max-height: 100%;
    }
 
+   @include media-query($on-laptop) {
+      padding-left: 5%;
+   }
+
    @include media-query($on-palm) {
       float: none;
-      width: 30%;
-      height: 10%;
-      padding: 0 35%;
+      width: 50%;
+      height: 50%;
+      padding: 0 25%;
    }
 }
 
@@ -169,11 +178,15 @@ html, body {
       max-height: 100%;
    }
 
+   @include media-query($on-laptop) {
+      padding-right: 5%;
+   }
+
    @include media-query($on-palm) {
       float: none;
-      width: 30%;
-      height: 10%;
-      padding: 0 35%;
+      width: 50%;
+      height: 50%;
+      padding: 0 25%;
    }
 }
 
@@ -185,12 +198,19 @@ html, body {
    padding-right: 8%;
    float: right;
 
+   @include media-query($on-laptop) {
+      width: 41%;
+      padding-left: 3%;
+      line-height: 150%;
+   }
+
    @include media-query($on-palm) {
       float: none;
       width: 100%;
       height: 80%;
       padding: 1%;
-      font-size: 13px;
+      font-size: 15px;
+      line-height: 150%;
    }
 }
 
@@ -202,12 +222,18 @@ html, body {
    padding-left: 8%;
    float: left;
 
+   @include media-query($on-laptop) {
+      width: 41%;
+      padding-right: 3%;
+      line-height: 25px;
+   }
+
    @include media-query($on-palm) {
       float: none;
       width: 100%;
       height: 80%;
       padding: 1%;
-      font-size: 13px;
+      font-size: 15px;
    }
 }
 
@@ -224,6 +250,10 @@ html, body {
    padding-bottom: 5%;
    color: white;
 
+   @include media-query($on-laptop) {
+      padding-top: 1.5%;
+   }
+
    @include media-query($on-palm) {
       padding-top: 2%;
       padding-bottom: 2%;
@@ -231,6 +261,28 @@ html, body {
 
    .home {
       text-align: center;
+      color: rgba(255,255,255,0.7);
+      text-shadow: 1px 1px 150px rgba(255,255,255,0.45);
+
+      a {
+         font-family: "Open Sans";
+         color: rgba(42,93,176,0.9); //#2A5DB0 
+         text-shadow: 0px 1px 2px rgba(255,255,255,0.25);
+      }
+
+      @include media-query($on-laptop) {
+         font-size: 12px;
+         line-height: 1.7;
+      }
+
+      @include media-query($on-palm) {
+         font-size: 15px;
+         line-height: 2.4;
+      }
+   }
+
+   .normal {
+      font-family: Ubuntu;
       color: rgba(255,255,255,0.7);
       text-shadow: 1px 1px 150px rgba(255,255,255,0.45);
 
@@ -250,11 +302,16 @@ html, body {
       color: rgba(255,255,255,0.6);
       text-shadow: 1px 1px 2px rgba(255,255,255,0.15);
 
+      @include media-query($on-laptop) {
+         font-size: 18px;
+      }
+
       @include media-query($on-palm) {
          width: 100%;
-         height: 10%;
-         margin-top: 4%;
+         height: 20%;
+         margin-top: 6%;
          font-size: 16px;
+         line-height: 1.5;
       }
    }
 
@@ -263,7 +320,7 @@ html, body {
       font-size: 18px;
       text-align: center;
       line-height: 3;
-      margin-top: -10px;
+      margin-top: 5%;
       color: rgba(255,255,255,0.7);
       text-shadow: 1px 1px 100px rgba(255,255,255,0.45);
 
@@ -272,10 +329,16 @@ html, body {
          color: rgba(142,93,176,0.8); //#2A5DB0 
       }
 
+      @include media-query($on-laptop) {
+         margin-top: 0%;
+         font-size: 16px;
+         line-height: 1.9;
+      }
+
       @include media-query($on-palm) {
          width: 100%;
-         height: 90%;
-         font-size: 14px;
+         height: 80%;
+         font-size: 16px;
          margin-top: 14%;
          line-height: 2.2;
       }
@@ -312,58 +375,16 @@ html, body {
    background: linear-gradient(to left, #606c88 , #3f4c6b);
 }
 
-.burlywood {
-   color: #DEB887;
-}
-
-.olivedrab {
-   color: #6B8E23;
-}
-
-.lawngreen {
-   color: #7CFC00;
-}
-
-.royalblue {
-   color: #4169E1;
-}
-
-.tan {
-   color: #D2B48C;
-}
-
-.crimson {
-   color: #DC143C;
-}
-
-.darkgoldenrod {
-   color: #B8860B;
-}
-
-.salmon {
-   color: #FA8072;
-}
-
-.rebeccapurple {
-   color: #663399;
-}
-
-.slategray {
-   color: #708090;
-}
-
-.slategraybg {
-   background-color: #D2B48C;
-}
-
-.darkslateblue {
-   color: #483D8B;
+.inbox {
+background: #136a8a; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #136a8a , #267871); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .darkgraybg {
-   background: #232526; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to top left, #131516 , #313335); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to top left, #131516 , #313335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #131516;
+   background: -webkit-linear-gradient(to top left, rgba(19,21,22,0.9), rgba(49,51,53,0.9));
+   background: linear-gradient(to top left, rgba(19,21,22,0.9), rgba(49,51,53,0.9));
 }
 
 .darkred {
@@ -387,13 +408,14 @@ html, body {
 
   .short {
      display: none;
+     text-align: center;
   }
    
   @include media-query($on-palm) {
      top: 0px;
      right: 10px;
      margin-top: 12px;
-     margin-right: 50px;
+     margin-right: 40px;
      position: absolute;
      right: $spacing-unit / 2 + 1%;
      .long {
@@ -438,14 +460,24 @@ html, body {
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
            margin-right: 30px;
+
+           @include media-query($on-laptop) {
+              margin-right: 10px;
+           }
         }
     }
 
+    @include media-query($on-laptop) {
+       margin-right: 80px;
+       font-size: 80%;
+    }
+
     @include media-query($on-palm) {
-        margin-top: 5px;
+        margin-top: 4px;
+        margin-right: 15px;
         position: absolute;
         top: 0px;
-        right: -80px;
+        right: 0px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
@@ -465,7 +497,7 @@ html, body {
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $red-color-dark;
                 }
             }
         }
@@ -483,6 +515,7 @@ html, body {
         .page-link {
             display: block;
             padding: 5px 10px;
+            color: $red-color-dark;
 
             &:not(:last-child) {
                 margin-right: 0;

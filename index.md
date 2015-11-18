@@ -5,9 +5,16 @@ layout: default
 {::options parse_block_html="true" /}
 <script>
    $(document).ready(function(){
+      function checkWidth() {
+         if ($(window).width < 600) {
+            $('.section > .wrapper').removeClass('wrapper');
+         }
+      }
       $('.page-content').closest('div.wrapper').removeClass('wrapper');
-      $('.page-content').fullpage({
-      });
+      $('.section').wrapInner('<div class="wrapper"></div>');
+      checkWidth(); // to run onLoad
+      $('.page-content').fullpage();
+      $(window).resize(checkWidth);
    });
 </script>
 
@@ -46,13 +53,12 @@ per hari. Kami menyediakan layanan penerjemahan untuk bidang teknis,
 pemasaran, akademik, bisnis, keuangan, atau lainnya, dan penerjemahan dapat 
 dilakukan oleh beberapa penerjemah profesional kami sekaligus apabila 
 diperlukan.  
-{: class="rtext content-id lang-hide home" style="padding-top: 1%;"}  
-Each of our translators is certified and is able to get  
-through `1,500-2,500 words` per day. We provide  
-technical, marketing, academic, business, financial, or   
-other translation services and our translation process  
-can be performed by more than one of our professional  
-translators when the job requires them.   
+{: class="rtext content-id lang-hide home" style="padding-top: 2%;"}  
+Each of our translators is certified and is able to get through 
+`1,500-2,500 words` per day. We provide technical, marketing, academic, 
+business, financial, or other translation services and our translation 
+process can be performed by more than one of our professional translators 
+when the job requires them.   
 {: class="rtext content-en home" style="padding-top: 2%;"}  
 
 </div>
@@ -63,19 +69,16 @@ translators when the job requires them.
 ![Free Quote][free-quote]  
 {: class="rimage"}  
 
-[Kirimkan][contact-us] berkas Anda dengan format `.docx`, `.pdf`,  
-`.rtf`, `.txt`, `.indd`, `.psd`, berkas `strings.xml`,  
-format yang digunakan program [CAT][cat-wiki], atau berkas  
-lainnya yang berisi teks yang Anda ingin kami  
-terjemahkan! Kami akan menghubungi Anda dan  
-memberitahukan harga diskonnya   
-dan waktu pengerjaannya.
+[Kirimkan][contact-us] berkas Anda dengan format `.docx`, `.pdf`, `.rtf`, 
+`.txt`, `.indd`, `.psd`, berkas `strings.xml`, format yang digunakan 
+program [CAT][cat-wiki], atau berkas lainnya yang berisi teks yang Anda 
+ingin kami terjemahkan! Kami akan menghubungi Anda dan memberitahukan 
+harga diskonnya dan waktu pengerjaannya.
 {: class="ltext content-id lang-hide home" style="padding-top: 2%;"}  
-[Send us][contact-us] your file with `.docx`, `.pdf`, `.rtf`,  
-`.txt`, `.indd`, `.psd` format, `strings.xml` file,  
-[CAT][cat-wiki] tools  format, or any other file with text you  
-want us to translate! We will get back to you soon  
-with our discounted price and duration for the job.  
+[Send us][contact-us] your file with `.docx`, `.pdf`, `.rtf`, `.txt`, 
+`.indd`, `.psd` format, `strings.xml` file, [CAT][cat-wiki] tools format, 
+or any other file with text you want us to translate! We will get back to 
+you soon with our discounted price and duration for the job.  
 {: class="ltext content-en home" style="padding-top: 4%;"}  
 
 </div>
@@ -86,16 +89,14 @@ with our discounted price and duration for the job.
 ![Other Services][other-services]  
 {: class="limage"}  
   
-Selain menerjemahkan, kami juga melayani 
-`penyuntingan`  dan `pengoreksian` hasil 
-terjemahan Anda. Pekerjaan ini bisa dibebankan 
-per jam atau per kata, tergantung kesepakatan awal. 
+Selain menerjemahkan, kami juga melayani `penyuntingan` dan `pengoreksian` 
+hasil terjemahan Anda. Pekerjaan ini bisa dibebankan per jam atau per kata, 
+tergantung kesepakatan awal. 
 {: class="rtext content-id lang-hide home" style="padding-top: 6%;"}  
-In addition to translating, we also do  
-`editing` and `proofreading` for your translation  
-texts. These works can be charged by the hour or by  
-word count depending on the initial agreement.  
-{: class="rtext content-en home" style="padding-top: 6%;"}  
+In addition to translating, we also do `editing` and `proofreading` for 
+your translation texts. These works can be charged by the hour or by word 
+count depending on the initial agreement.  
+{: class="rtext content-en home" style="padding-top: 7%;"}  
 
 </div>
 
@@ -108,13 +109,11 @@ word count depending on the initial agreement.
 Kami tidak melayani penjurubahasaan untuk saat ini, tetapi kami berharap 
 bisa melakukan pelayanan tersebut dalam waktu dekat. Pastikan Anda mengecek 
 kembali situs ini jika Anda membutuhkan layanan tersebut nanti.  
-{: class="ltext content-id lang-hide home" style="padding-top: 5%;"}  
-We don't do interpreting at the moment,   
-but we expect to change the situation in  
-not so distant future. Be sure to  
-check this site back when you  
-need the service later. 
-{: class="ltext content-en home" style="padding-top: 5%;"}  
+{: class="ltext content-id lang-hide home" style="padding-top: 6%;"}  
+We don't do interpreting at the moment, but we expect to change the 
+situation in not so distant future. Be sure to check this site back when 
+you need the service later. 
+{: class="ltext content-en home" style="padding-top: 8%;"}  
 
 </div>  
 

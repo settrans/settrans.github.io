@@ -11,16 +11,25 @@ layout: default
             $('.section > .wrapper').removeClass('wrapper');
          }
       }
+      $('.lang-hide').removeClass('lang-hide');
+      $('.content-id').addClass('lang-hide');
       $('.page-content').closest('div.wrapper').removeClass('wrapper');
       $('.section').wrapInner('<div class="wrapper"></div>');
+      $('.section').first().wrapInner('<div class="shadow-night"></div>');
+      $('.shadow-night').css({
+         "width": "100%",
+         "height": "100%",
+         "margin-top": "-5%",
+         "padding-top": "5%",
+         "padding-bottom": "5%"
+      });
       checkWidth(); // to run onLoad
       $('.page-content').fullpage();
       $(window).resize(checkWidth);
    });
 </script>
 
-<div class="section shadow-night">
-<div class="main">
+<div class="section main">
 
 Layanan Penerjemahan Bahasa Indonesia-Inggris
 {: class="content-id lang-hide home-title" style="text-align: center;"}
@@ -41,7 +50,6 @@ for your texts for an [affordable price][price].
 {: class="content-en home-text"}
 
 </div>
-</div>
 
 <div class="section mirage">
 <span class="playfair content-id lang-hide">Penerjemah Kami</span><span class="playfair content-en">Our Translators</span>
@@ -49,13 +57,13 @@ for your texts for an [affordable price][price].
 ![Our Translators][our-translators]  
 {: class="limage"}  
 
-Semua penerjemah bersertifikat dan dapat menyelesaikan `1.500-2.500 kata` 
-per hari. Kami menyediakan layanan penerjemahan untuk bidang teknis, 
-pemasaran, akademik, bisnis, keuangan, atau lainnya, dan penerjemahan dapat 
-dilakukan oleh beberapa penerjemah profesional kami sekaligus apabila 
-diperlukan.  
-{: class="rtext content-id lang-hide home" style="padding-top: 2%;"}  
-Each of our translators is certified and is able to get through 
+Semua penerjemah bersertifikat dan masing-masing mampu menyelesaikan 
+`1.500-2.500 kata` per hari. Kami menyediakan layanan penerjemahan untuk 
+bidang teknis, pemasaran, akademik, bisnis, keuangan, atau lainnya, dan 
+penerjemahan dapat dilakukan oleh beberapa penerjemah profesional kami 
+sekaligus apabila diperlukan.  
+{: class="rtext content-id lang-hide home" style="padding-top: 1%;"}  
+All translators are certified and each one of them can get through 
 `1,500-2,500 words` per day. We provide technical, marketing, academic, 
 business, financial, or other translation services and our translation 
 process can be performed by more than one of our professional translators 
@@ -65,7 +73,7 @@ when the job requires them.
 </div>
 
 <div class="section virgin-america">
-<span class="playfair content-id lang-hide">Dapatkan Penawaran Gratis</span><span class="playfair content-en">Get A Free Quote</span>
+<span class="playfair content-id lang-hide">Dapatkan Penawaran Kami</span><span class="playfair content-en">Get A Quote</span>
 
 ![Free Quote][free-quote]  
 {: class="rimage"}  

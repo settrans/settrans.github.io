@@ -6,7 +6,12 @@
      <span class="site-subtitle-id">{{ site.subtitle_id }}</span>
 
 <button type="button" id="lang-button">
-<span class="long">Bahasa</span><span class="short">ID</span>
+   <span class="content-en">
+      <span class="long">Bahasa</span><span class="short">ID</span>
+   </span>
+   <span class="content-id">
+      <span class="long">English</span><span class="short">EN</span>
+   </span>
 </button>
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -30,13 +35,8 @@
   <script>
       $(document).ready(function() {
          $("#lang-button").click(function(){
-           en = "\n<span class=\"long\">English</span><span class=\"short\">EN</span>\n";
-           id = "\n<span class=\"long\">Bahasa</span><span class=\"short\">ID</span>\n";
             $(".content-id").toggleClass('lang-hide');
             $(".content-en").toggleClass('lang-hide');
-             $(this).html(function(i, html){
-               return html == id ? en : id;
-             })
          });
       });
   </script>

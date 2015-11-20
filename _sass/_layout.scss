@@ -313,12 +313,13 @@ html, body {
       text-align: center;
       line-height: 3;
       margin-top: 5%;
-      color: rgba(255,255,255,0.5);
-      text-shadow: 0px 0px 190px rgba(0,0,0,0.9); //rgba(255,255,255,0.9);
+      color: rgba(255,255,255,0.8);
+      text-shadow: 0px 0px 125px rgba(57,39,73,0.5);
 
       a {
          font-family: "Open Sans";
-         color: rgba(142,93,176,0.95); //#2A5DB0 
+         color: rgba(242,163,255,0.95);
+         text-shadow: 0px 0px 1px rgba(238,238,255,0.3);
       }
 
       @include media-query($on-laptop) {
@@ -338,15 +339,22 @@ html, body {
 }
 
 .main {
-   background: url(/images/bg4.jpg) no-repeat center center;
+   background-repeat: no-repeat;
+   background-position: center center;
    background-size: cover;
    position: relative;
 }
 
+.colorful {
+   background: #D38312; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to top left, rgba(168,50,121,0.85), rgba(211,131,18,0.55)); //#D38312 , #A83279);
+   background: linear-gradient(to top left, rgba(168,50,121,0.85), rgba(211,131,18,0.55)); //#D38312 , #A83279);
+}
+
 .shadow-night {
    background: #000000;
-   background: -webkit-linear-gradient(to top left, #000000, #53346D);
-   background: linear-gradient(to top left, rgba(0,0,0,0.95), rgba(83,52,109,0.6)); //#000000, #53346D);
+   background: -webkit-linear-gradient(to top left, #000000, #392749);
+   background: linear-gradient(to top left, #000000, #392749);
 }
 
 .mirage {

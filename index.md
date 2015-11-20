@@ -5,31 +5,63 @@ layout: default
 {::options parse_block_html="true" /}
 <script src="/scripts/jquery.fullPage.min.js"></script>
 <script>
-   $(document).ready(function(){
-      function checkWidth() {
-         if ($(window).width < 600) {
-            $('.section > .wrapper').removeClass('wrapper');
-         }
+   //background rotator function and variables
+   var time = $.now();
+   var currentBackground = time % 4;
+   var backgrounds = [];
+   backgrounds[0] = '/images/bg1.jpg';
+   backgrounds[1] = '/images/bg2.jpg';
+   backgrounds[2] = '/images/bg3.jpg';
+   backgrounds[3] = '/images/bg4.jpg';
+
+   function changeBackground() {
+       currentBackground++;
+       if(currentBackground > 3) currentBackground = 0;
+
+       $('.main').fadeOut(500, function() {
+           $('.main').css({
+               'background-image' : "url('" + backgrounds[currentBackground] + "')"
+           });
+           $('.main').fadeIn(500);
+       });
+
+       setTimeout(changeBackground, 20000);
+   }
+
+   function checkWidth() {
+      if ($(window).width < 600) {
+         $('.section > .wrapper').removeClass('wrapper');
       }
+   }
+
+   $(document).ready(function(){
       $('.lang-hide').removeClass('lang-hide');
       $('.content-id').addClass('lang-hide');
       $('.page-content').closest('div.wrapper').removeClass('wrapper');
       $('.section').wrapInner('<div class="wrapper"></div>');
-      $('.section').first().wrapInner('<div class="shadow-night"></div>');
-      $('.shadow-night').css({
+      $('.section').first().wrapInner('<div class="colorful"></div>');
+      $('.colorful').css({
          "width": "100%",
          "height": "100%",
          "margin-top": "-5%",
          "padding-top": "5%",
          "padding-bottom": "5%"
       });
-      checkWidth(); // to run onLoad
+
       $('.page-content').fullpage();
+
+      checkWidth(); // to run onLoad
       $(window).resize(checkWidth);
+
+      $('.main').css({
+         'background-image' : "url('" + backgrounds[currentBackground] + "')"
+      });
+      
+      setTimeout(changeBackground, 20000);        
    });
 </script>
 
-<div class="section main">
+<div class="main section">
 
 Layanan Penerjemahan Bahasa Indonesia-Inggris
 {: class="content-id lang-hide home-title" style="text-align: center;"}
@@ -51,7 +83,7 @@ for your texts for an [affordable price][price].
 
 </div>
 
-<div class="section mirage">
+<div class="section shadow-night">
 <span class="playfair content-id lang-hide">Penerjemah Kami</span><span class="playfair content-en">Our Translators</span>
 
 ![Our Translators][our-translators]  
@@ -99,12 +131,10 @@ you soon with our discounted price and duration for the job.
 {: class="limage"}  
   
 Selain menerjemahkan, kami juga melayani `penyuntingan` dan `pengoreksian` 
-hasil terjemahan Anda. Pekerjaan ini bisa dibebankan per jam atau per kata, 
-tergantung kesepakatan awal. 
+hasil terjemahan Anda. Pekerjaan tersebut juga dibebankan per kata.
 {: class="rtext content-id lang-hide home" style="padding-top: 6%;"}  
 In addition to translating, we also do `editing` and `proofreading` for 
-your translation texts. These works can be charged by the hour or by word 
-count depending on the initial agreement.  
+your translation texts. These jobs also charge by word count.
 {: class="rtext content-en home" style="padding-top: 7%;"}  
 
 </div>

@@ -318,8 +318,17 @@ html, body {
 
       a {
          font-family: "Open Sans";
-         color: rgba(242,163,255,0.95);
+         text-decoration: none;
+         padding: 0 7px;
+         border: 2px dotted rgba(222,143,255,0.95);
+         color: rgba(222,143,255,0.95);
          text-shadow: 0px 0px 1px rgba(238,238,255,0.3);
+
+         &:hover,
+         &:active {
+            border: 2px solid rgba(222,143,255,0.95);
+
+         }
       }
 
       @include media-query($on-laptop) {
@@ -345,10 +354,22 @@ html, body {
    position: relative;
 }
 
-.colorful {
-   background: #D38312; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to top left, rgba(168,50,121,0.85), rgba(211,131,18,0.55)); //#D38312 , #A83279);
-   background: linear-gradient(to top left, rgba(168,50,121,0.85), rgba(211,131,18,0.55)); //#D38312 , #A83279);
+.crazy-orange {
+   width: 100%;
+   height: 100%;
+   margin-top: -5%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+
+   background: #D38312;
+   background: -webkit-linear-gradient(to top left, rgba(168,50,121,0.85), rgba(190,103,46,0.55));
+   background: linear-gradient(to top left, rgba(168,50,121,0.85), rgba(190,103,46,0.55));
+
+   @include media-query($on-palm){
+      background: #D38312;
+      background: -webkit-linear-gradient(to top left, rgba(180,73,90,0.85), rgba(192,95,62,0.55));
+      background: linear-gradient(to top left, rgba(180,73,90,0.85), rgba(192,95,62,0.55));
+   }
 }
 
 .shadow-night {
@@ -381,12 +402,6 @@ html, body {
    background: linear-gradient(to left, #606c88 , #3f4c6b);
 }
 
-.inbox {
-background: #136a8a; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #136a8a , #267871); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .darkgraybg {
    background: #131516;
    background: -webkit-linear-gradient(to top left, rgba(19,21,22,0.9), rgba(49,51,53,0.9));
@@ -402,9 +417,9 @@ background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, F
   margin-top: -22px;
   margin-left: 15px;
   background: $red-color-dark;
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  border-radius: 2px;
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
   border: 1px solid $red-color-dark;
   font-family: Arial;
   color: #ffffff;
@@ -462,13 +477,24 @@ background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, F
         color: rgba(255,255,255,0.8);
         line-height: $base-line-height;
         text-shadow: 1px 1px 4px rgba(238,238,255,0.2);
+        text-decoration: none;
+        padding: 0 10px;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-           margin-right: 30px;
+           margin-right: 10px;
 
            @include media-query($on-laptop) {
               margin-right: 10px;
+           }
+        }
+
+        &:hover,
+        &:active {
+           border-top: 3px solid $red-color-dark;
+
+           @include media-query($on-palm) {
+              border-top: none;
            }
         }
     }

@@ -19,10 +19,10 @@ layout: default
        if(currentBackground > 3) currentBackground = 0;
 
        $('.main').fadeOut(500, function() {
-           $('.main').css({
-               'background-image' : "url('" + backgrounds[currentBackground] + "')"
-           });
-           $('.main').fadeIn(500);
+          $('.main').css({
+             'background-image': "url('"+backgrounds[currentBackground]+"')"
+          });
+          $('.main').fadeIn(500);
        });
 
        setTimeout(changeBackground, 20000);
@@ -35,28 +35,19 @@ layout: default
    }
 
    $(document).ready(function(){
-      $('.lang-hide').removeClass('lang-hide');
-      $('.content-id').addClass('lang-hide');
       $('.page-content').closest('div.wrapper').removeClass('wrapper');
       $('.section').wrapInner('<div class="wrapper"></div>');
-      $('.section').first().wrapInner('<div class="colorful"></div>');
-      $('.colorful').css({
-         "width": "100%",
-         "height": "100%",
-         "margin-top": "-5%",
-         "padding-top": "5%",
-         "padding-bottom": "5%"
-      });
+      $('.section').first().wrapInner('<div class="crazy-orange"></div>');
 
       $('.page-content').fullpage();
 
       checkWidth(); // to run onLoad
       $(window).resize(checkWidth);
 
+      //rotating background
       $('.main').css({
-         'background-image' : "url('" + backgrounds[currentBackground] + "')"
+         'background-image': "url('" + backgrounds[currentBackground] + "')"
       });
-      
       setTimeout(changeBackground, 20000);        
    });
 </script>
@@ -89,18 +80,17 @@ for your texts for an [affordable price][price].
 ![Our Translators][our-translators]  
 {: class="limage"}  
 
-Semua penerjemah bersertifikat dan masing-masing mampu menyelesaikan 
-`1.500-2.500 kata` per hari. Kami menyediakan layanan penerjemahan untuk 
-bidang teknis, pemasaran, akademik, bisnis, keuangan, atau lainnya, dan 
-penerjemahan dapat dilakukan oleh beberapa penerjemah profesional kami 
-sekaligus apabila diperlukan.  
-{: class="rtext content-id lang-hide home" style="padding-top: 1%;"}  
-All translators are certified and each one of them can get through 
-`1,500-2,500 words` per day. We provide technical, marketing, academic, 
-business, financial, or other translation services and our translation 
-process can be performed by more than one of our professional translators 
-when the job requires them.   
-{: class="rtext content-en home" style="padding-top: 2%;"}  
+Penerjemah kami adalah orang Indonesia Asli dan merupakan penerjemah 
+bersertifikat. Masing-masing mampu menyelesaikan `1.000-2.500 kata` per 
+hari.  
+Selain itu, proses penerjemahan juga dapat dilakukan oleh beberapa 
+penerjemah profesional kami sekaligus untuk mempercepat pengerjaan.
+{: class="rtext content-id lang-hide home" style="padding-top: 2%;"}  
+Our translators are all Native Indonesians and certified translators. Each 
+one of them can get through `1,000-2,500 words` per day.  
+In addition, our translation process can be performed by more than one of 
+our professional translators to accelerate the job execution.
+{: class="rtext content-en home" style="padding-top: 3%;"}  
 
 </div>
 
@@ -114,13 +104,13 @@ when the job requires them.
 `.txt`, `.indd`, `.psd`, berkas `strings.xml`, format yang digunakan 
 program [CAT][cat-wiki], atau berkas lainnya yang berisi teks yang Anda 
 ingin kami terjemahkan! Kami akan menghubungi Anda dan memberitahukan 
-harga diskonnya dan waktu pengerjaannya.
+harga dan waktu pengerjaannya.
 {: class="ltext content-id lang-hide home" style="padding-top: 2%;"}  
 [Send us][contact-us] your file with `.docx`, `.pdf`, `.rtf`, `.txt`, 
 `.indd`, `.psd` format, `strings.xml` file, [CAT][cat-wiki] tools format, 
 or any other file with text you want us to translate! We will get back to 
-you soon with our discounted price and duration for the job.  
-{: class="ltext content-en home" style="padding-top: 4%;"}  
+you soon with our price and duration for the job.  
+{: class="ltext content-en home" style="padding-top: 5.5%;"}  
 
 </div>
 
@@ -131,8 +121,8 @@ you soon with our discounted price and duration for the job.
 {: class="limage"}  
   
 Selain menerjemahkan, kami juga melayani `penyuntingan` dan `pengoreksian` 
-hasil terjemahan Anda. Pekerjaan tersebut juga dibebankan per kata.
-{: class="rtext content-id lang-hide home" style="padding-top: 6%;"}  
+hasil terjemahan Anda. Tarif pekerjaan tersebut juga dibebankan per kata.
+{: class="rtext content-id lang-hide home" style="padding-top: 5%;"}  
 In addition to translating, we also do `editing` and `proofreading` for 
 your translation texts. These jobs also charge by word count.
 {: class="rtext content-en home" style="padding-top: 7%;"}  
@@ -155,6 +145,9 @@ you need the service later.
 {: class="ltext content-en home" style="padding-top: 8%;"}  
 
 </div>  
+
+<div id="menu" style="width: 300px; height: 300px; background-color: white;">
+</div>
 
 [contact-us]: mailto:settrans.eits@gmail.com "SetTrans.EITS@gmail.com"
 [cat-wiki]: https://en.wikipedia.org/wiki/Computer-assisted_translation 

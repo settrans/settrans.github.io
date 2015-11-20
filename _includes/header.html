@@ -1,7 +1,7 @@
 <header class="site-header darkgraybg" style="position: relative;">
 
   <div class="wrapper">
-     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a><br />
+     <a class="site-title rotate" href="{{ site.baseurl }}/">{{ site.title }}</a><br />
      <span class="site-subtitle-en">{{ site.subtitle_en }}</span><br />  
      <span class="site-subtitle-id">{{ site.subtitle_id }}</span>
 
@@ -34,6 +34,11 @@
 
   <script>
       $(document).ready(function() {
+         //set default content language
+         $('.lang-hide').removeClass('lang-hide');
+         $('.content-id').addClass('lang-hide');
+
+         //toggle button for language selection
          $("#lang-button").click(function(){
             $(".content-id").toggleClass('lang-hide');
             $(".content-en").toggleClass('lang-hide');

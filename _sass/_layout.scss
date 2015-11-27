@@ -9,6 +9,59 @@ html, body {
    height:100%;
 }
 
+.no-script {
+	background: $grey-color-dark;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: -10%;
+	left: 0;
+	right: 0;
+	z-index: 2;
+
+	p {
+		font-family: "Pacifico";
+		text-align: center;
+		letter-spacing: 1px;
+		color: rgba(255,40,40,0.75);
+		text-shadow: 0 0 3px rgba(255,255,255,0.08);
+		position: relative;
+		top: 40%;
+		left: 15%;
+		height: 20%;
+		width: 70%;
+	}
+}
+
+.small-screen {
+	background: $grey-color-dark;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+	position: fixed;
+	top: 0;
+	bottom: -10%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	p {
+		font-family: "Pacifico";
+		text-align: center;
+		letter-spacing: 1px;
+		color: rgba(255,40,40,0.75);
+		text-shadow: 0 0 3px rgba(255,255,255,0.08);
+		position: relative;
+		top: 40%;
+		left: 15%;
+		height: 20%;
+		width: 70%;
+	}
+}
+
 .site-header {
    border-top: 5px solid $red-color-dark;
    min-height: 46px;
@@ -149,12 +202,12 @@ html, body {
  }
 
 .npage {
-   padding-top: 6%;
+   padding-top: 2%;
 }
 
 .npage-1-col {
    background-color: #fefefe;
-   border-radius: 15px;
+   border-radius: 5px;
    padding: 4% 5% 2% 5%;
    box-shadow: 1px 2px 15px rgba(0,0,0,0.25);
 }
@@ -260,9 +313,12 @@ html, body {
 
 #down-arrows {
    position: fixed; 
-   top: 82%; 
+   top: 85%; 
    left: 50%; 
-   height: 100%;
+
+	@include media-query($on-palm){
+		top: 90%;
+	}
 }
 
 .down-arrows {
@@ -317,24 +373,24 @@ html, body {
    -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
-.pusher {
-   width: 100%;
-   height: 80px;
+.facade {
+	margin-top: -49px;
+
+	@include media-query($on-palm){
+		padding-bottom: -48px;
+	}
 }
 
 .section {
-   margin-top: -48px;
-   margin-bottom: -48px;
-   padding-bottom: 4%;
+   padding-bottom: 3.5%;
    color: white;
 
    @include media-query($on-laptop) {
-      padding-top: 1.5%;
+      padding-top: 4.5%;
    }
 
    @include media-query($on-palm) {
-      padding-top: 10%;
-      padding-bottom: 2%;
+      height: 120%;
    }
 
    .normal-title {
@@ -378,7 +434,6 @@ html, body {
       letter-spacing: 0.5px;
       text-align: center;
       color: rgba(255,255,255,0.7);
-      text-shadow: 1px 1px 150px rgba(255,255,255,0.45);
 
       a {
          font-family: "Open Sans";
@@ -413,9 +468,9 @@ html, body {
       @include media-query($on-palm) {
          width: 100%;
          height: 20%;
-         margin-top: 6%;
+         margin-top: 4%;
          font-size: 16px;
-         line-height: 1.5;
+         line-height: 2.5;
       }
    }
 
@@ -425,21 +480,20 @@ html, body {
       text-align: center;
       line-height: 2.2;
       letter-spacing: 0.5px;
-      margin-top: 5%;
       color: rgba(255,255,255,0.7);
-      text-shadow: 0px 0px 125px rgba(57,39,73,0.5);
 
       a {
          font-family: "Open Sans";
          text-decoration: none;
          padding: 0 7px;
-         border: 2px dotted rgba(222,143,255,0.95);
-         color: rgba(222,143,255,0.95);
-         text-shadow: 0px 0px 1px rgba(238,238,255,0.3);
+         border: 2px dotted rgba(178,34,34,0.95);
+         color: rgba(178,34,34,0.95);
+         text-shadow: 0px 0px 1px rgba(138,138,155,0.3);
 
          &:hover,
          &:active {
-            border: 2px solid rgba(222,143,255,0.95);
+            border: 2px solid rgba(178,34,34,0.95);
+
          }
       }
 
@@ -453,54 +507,61 @@ html, body {
          width: 100%;
          height: 80%;
          font-size: 16px;
-         margin-top: 14%;
-         line-height: 2.2;
+         margin-top: 6%;
+         line-height: 3.2;
       }
    }
 }
 
-.bgUpper {
-   background: url(/images/bg1.jpg);
+.main {
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
    background-attachment: fixed;
    position: absolute;
    top: 0;
-   bottom: 0;
+   bottom: -7%;
    left: 0;
    right: 0;
-   z-index: -1;
+
+	@include media-query($on-laptop){
+		bottom: -15%;
+	}
 }
 
-.bgLower {
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   background-attachment: fixed;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   z-index: -2;
-}
-
-.crazy-orange {
-   width: 100%;
-   height: 85%;
-   margin-top: -10%;
-   margin-bottom: -5%;
-   padding-top: 18%;
-
+#bg0 {
    background: #D38312;
    background: -webkit-linear-gradient(to top left, rgba(168,50,121,0.8), rgba(190,103,46,0.5));
    background: linear-gradient(to top left, rgba(168,50,121,0.8), rgba(190,103,46,0.5));
+   z-index: 0;
 
    @include media-query($on-palm){
-      background: -webkit-linear-gradient(to top left, rgba(180,73,90,0.85), rgba(192,95,62,0.55));
-      background: linear-gradient(to top left, rgba(180,73,90,0.85), rgba(192,95,62,0.55));
+      margin-top: -30%;
+      margin-bottom: -13%;
+      padding-top: 75%;
+      background: -webkit-linear-gradient(to top left, rgba(180,73,90,0.8), rgba(192,95,62,0.5));
+      background: linear-gradient(to top left, rgba(180,73,90,0.8), rgba(192,95,62,0.5));
    }
+}
+
+#bg1 {
+   background-image: url(/images/bg1.jpg);
+   z-index: -1;
+}
+
+#bg2 {
+   background-image: url(/images/bg2.jpg);
+   z-index: -2;
+}
+
+#bg3 {
+   background-image: url(/images/bg3.jpg);
+   z-index: -3;
+}
+
+#bg4 {
+   background-image: url(/images/bg4.jpg);
+   z-index: -4;
 }
 
 .passion {
@@ -552,9 +613,10 @@ html, body {
 }
 
 .white {
+   background-color: #ffffff;
+   background-image: url(/images/text-bg.png);
+   background-repeat: repeat;
    padding: 0% -12%;
-   background: #ffffff;
-   color: #131516;
 }
 
 .darkred {
@@ -564,7 +626,6 @@ html, body {
 #lang-button {
   float: right;
   margin-top: -22px;
-  margin-left: 15px;
   background: $red-color-dark;
   -webkit-border-radius: 1;
   -moz-border-radius: 1;
@@ -581,6 +642,10 @@ html, body {
      text-align: center;
   }
    
+  @include media-query($on-laptop) {
+	  margin-left: 0;
+  }
+
   @include media-query($on-palm) {
      top: 0px;
      right: 10px;
@@ -608,13 +673,21 @@ html, body {
   border: 1px dashed;
 }
 
+.current {
+  margin-top: -9px;
+  margin-bottom: -9px;
+  border-bottom: 3px solid rgba(204,6,24,0.8);
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
 .site-nav {
     font-family: "Open Sans";
     float: right;
     line-height: 56px;
-    font-size: 95%;
+    font-size: 80%;
     margin-top: -40px;
-    margin-right: 100px;
+    margin-right: 70px;
     margin-bottom: -40px;
     z-index: 1;
 
@@ -625,27 +698,33 @@ html, body {
     .page-link {
         color: rgba(255,255,255,0.8);
         line-height: $base-line-height;
+        letter-spacing: 1px;
         text-shadow: 1px 1px 4px rgba(238,238,255,0.2);
         text-decoration: none;
+		  text-transform: uppercase;
         padding: 0 10px;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-           margin-right: 10px;
+           margin-right: 5px;
         }
 
         @include media-query($on-laptop) {
-           padding: 0 5px;
+           padding: 0 2px;
 
            // Gaps between nav items, but not on the last one
            &:not(:last-child) {
-              margin-right: 5px;
+              margin-right: 0;
            }
         }
 
         &:hover,
         &:active {
+			  margin-top: -9px;
+			  margin-bottom: -9px;
            border-bottom: 3px solid rgba(204,6,24,0.8);
+			  padding-top: 9px;
+			  padding-bottom: 9px;
 
            @include media-query($on-palm) {
               border-bottom: none;
@@ -720,7 +799,6 @@ html, body {
     border-top: 1px solid $grey-color-light;
     padding: 5% 0;
     background-color: #2e3436;
-    z-index: 1;
 }
 
 .footer-heading {
@@ -771,6 +849,10 @@ html, body {
     width:         calc(100% - (#{$spacing-unit} / 2));
     text-align: center;
     font-size: 10px;
+
+	 @include media-query($on-palm){
+		 text-align: left;
+	 }
 }
 
 @include media-query($on-laptop) {

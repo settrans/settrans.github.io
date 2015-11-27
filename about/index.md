@@ -6,6 +6,13 @@ permalink: /about/
 ---
 
 {::options parse_block_html="true" /}
+<head>
+<script>
+	$(document).ready(function() {
+	});
+</script>
+</head>
+
 <div class="section white npage">
 <div class="wrapper">
 <div class="npage-1-col">

@@ -3,118 +3,111 @@ layout: default
 ---
 
 {::options parse_block_html="true" /}
+<head>
+<link rel="stylesheet" href="{{ "/css/jquery.fullPage.css" | prepend: site.baseurl }}">
 <script src="/scripts/jquery.fullPage.min.js"></script>
 <script>
    //background rotator function and variables
-   var time = $.now();
-   var currentBG = time % 4;
-   var BGsLoaded = 1;
-   var backgrounds = [];
-   backgrounds[0] = '/images/bg1.jpg';
-   backgrounds[1] = '/images/bg2.jpg';
-   backgrounds[2] = '/images/bg3.jpg';
-   backgrounds[3] = '/images/bg4.jpg';
-
    function changeBG() {
-       if(BGsLoaded == 2) {
-          $('.site-subtitle-en, \
-             .site-subtitle-id, \
-             .content-en, \
-             .site-nav, \
-             #down-arrows, \
-             #lang-button').fadeIn(4000);
-       }
-
-       if(BGsLoaded < 4){
-          currentBG++;
-          if(currentBG > 3) currentBG = 0;
-
-          $('.bgLower').css({
-             'background-image': "url('"+backgrounds[currentBG]+"')",
-             'opacity': '0'
-          });
-          
-          $('.bgLower').animate({
-             'opacity': '1'
-          }, 2000);
-          
-          $('.bgUpper').animate({
-             'opacity': '0'
-          }, 2000);
-
-          $('.bgUpper').css({
-             'background-image': "url('"+backgrounds[currentBG]+"')",
-             'opacity': '1'
-          });
-
-          BGsLoaded++;
-          setTimeout(changeBG, 2000);
-       } 
+      $("#bg1")
+         .fadeOut(800, function(){
+            $('.site-subtitle-en, \
+               .site-subtitle-id, \
+               .content-en, \
+               #down-arrows, \
+               .site-nav, \
+               #lang-button').velocity("fadeIn", {duration: 6000});
+            $("#bg2")
+               .delay(1200)
+               .fadeOut(800, function(){
+                  $("#bg3")
+                     .delay(1200)
+                     .velocity("fadeOut", {duration: 800});
+               });
+         });
    }
 
    function checkWidth() {
-      if ($(window).width < 600) {
+      if ($(window).width() < 600) {
+			$('.small-screen').show();
          $('.section > .wrapper').removeClass('wrapper');
-      }
+         $('.site-subtitle-en, .site-subtitle-id').hide();
+		} else if ($(window).width() < 800) {
+			$('.small-screen').show();
+
+		} else {
+			$('.small-screen').hide();
+			$('.page-content').fullpage({
+				fixedElements: '#down-arrows',
+				easing: 'easeInOutQuad',
+				verticalCentered: true,
+				onLeave: function(index, nextIndex, direction){
+					var leavingSection = $(this);
+
+					if(direction == 'up' || (index == 5 && direction == 'down')){
+						$('#down-arrows').hide();
+					} else {
+						$('#down-arrows').show();
+					}
+					
+					if(index == 1 && direction =='down'){
+						$('.site-header').addClass('darkgray', 5000);
+					}
+					else if(index == 2 && direction == 'up'){
+						$('.site-header').removeClass('darkgray', 5000);
+					}
+				},
+				afterLoad: function(anchorLink, index){
+					var loadedSection = $(this);
+
+					if(index == 6){
+						$('#down-arrows').hide();
+						$('.site-footer').show();
+					} else if(index == 1){
+						$('#down-arrows').show();
+					} 
+				}
+			});
+
+			//rotating background
+			$('.site-subtitle-en, \
+				.site-subtitle-id, \
+				.content-en, \
+				#down-arrows, \
+				.site-nav, \
+				#lang-button').hide();
+			setTimeout(changeBG, 1200);        
+
+			$('#down-arrows').on("click", $.fn.fullpage.moveSectionDown);
+
+		}
    }
 
    $(document).ready(function(){
-      $('.page-content').fullpage({
-         fixedElements: '#down-arrows',
-         easing: 'easeInOutQuad',
-         verticalCentered: true,
-         onLeave: function(index, nextIndex, direction){
-            var leavingSection = $(this);
-
-            if(direction == 'up' || (index == 5 && direction == 'down')){
-               $('#down-arrows').hide();
-            } else {
-               $('#down-arrows').show();
-            }
-            
-            if(index == 1 && direction =='down'){
-               $('.site-header').addClass('darkgray', 5000);
-            }
-            else if(index == 2 && direction == 'up'){
-               $('.site-header').removeClass('darkgray', 5000);
-            }
-         },
-         afterLoad: function(anchorLink, index){
-            var loadedSection = $(this);
-
-            if(index == 6){
-               $('#down-arrows').hide();
-            } else if(index == 1){
-               $('#down-arrows').show();
-            } 
-         }
-      });
-
+		$('.no-script').hide();
       checkWidth(); // to run onLoad
       $(window).resize(checkWidth);
-
-      //rotating background
-      $('.site-subtitle-en, \
-         .site-subtitle-id, \
-         .content-en, \
-         #down-arrows, \
-         .site-nav, \
-         #lang-button').hide();
-
-       $('.bgUpper').css({
-          'background-image': "url('"+backgrounds[currentBG]+"')",
-          'opacity': '1'
-       });
-      setTimeout(changeBG, 2000);        
-
-      $('.site-header').removeClass('darkgray');
+		$('.site-header').removeClass('darkgray');
    });
 </script>
+</head>
 
-<div class="bgUpper"></div>
-<div class="bgLower"></div>
-<div class="section">
-<div class="crazy-orange">
+<div class="no-script">
+I'm ugly with javascript disabled.  
+Please enable javascript.
+</div>
+
+<div class="small-screen">
+I'm ugly on narrow screen.  
+Please open in wider screen.
+</div>
+
+<div class="main" id="bg0"></div>
+<div class="main" id="bg1"></div>
+<div class="main" id="bg2"></div>
+<div class="main" id="bg3"></div>
+<div class="main" id="bg4"></div>
+<div class="facade section">
 <div class="wrapper">
 
 Ingin menerjemahkan   
@@ -132,27 +125,23 @@ or vice versa?
 
 </div>
 </div>
-</div>
 
 <div class="section passion">
-<div class="wrapper">
+<div class="wrapper" style="margin-top: -120px;">
 
-Kami menyediakan:
+Kami dapat memberikan Anda  
 {: class="content-id home-text"}
-We provide:
-{: class="content-en home-text"}
-
-Layanan Penerjemahan Bahasa Indonesia-Inggris.
+Layanan Penerjemahan Bahasa Indonesia-Inggris
 {: class="content-id home-title"}
-English-Indonesian Translation Services.
-{: class="content-en home-title"}
-  
-
-Kami dapat memberikan Anda pelayanan penerjemahan yang cepat untuk  
-teks Anda dengan akurasi tinggi serta [harga yang terjangkau][price]. 
+yang cepat untuk teks Anda dengan akurasi tinggi dengan [harga yang 
+bersaing][price]. 
 {: class="content-id home-text"}
-We can give you rapid translations with great accuracy  
-for your texts for an [affordable price][price].  
+
+We can give you rapid  
+{: class="content-en home-text"}
+English-Indonesian Translation Services
+{: class="content-en home-title"}
+with great accuracy for your texts at [competitive prices][price].  
 {: class="content-en home-text"}
 
 </div>
@@ -160,29 +149,36 @@ for your texts for an [affordable price][price].
 
 <div class="section ash">
 <div class="wrapper">
-<span class="open-sans content-id">Penerjemah</span>
-<span class="open-sans content-en">Translators</span>
+
+Penerjemah
+{: class="open-sans content-id"}
+Translators
+{: class="open-sans content-en"}
 
 ![Our Translators][our-translators]  
 {: class="limage"}  
 
 Kami adalah orang-orang Indonesia Asli dan merupakan penerjemah 
-bersertifikat. Masing-masing mampu menyelesaikan `1.000-2.500 kata` per 
-hari. Selain itu, proses penerjemahan juga dapat dilakukan oleh beberapa 
-penerjemah sekaligus untuk mempercepat pengerjaan.
-{: class="rtext content-id home" style="padding-top: 2%;"}  
+bersertifikat. Masing-masing dari kami mampu menyelesaikan hingga 
+`2.500 kata` per hari. Selain itu, kami menggunakan pengingat 
+terjemahan dan penerjemahan kolaboratif untuk mempercepat pengerjaan.
+{: class="rtext content-id home" style="padding-top: 3%;"}  
 We are all Native Indonesians and certified translators. Each one of us 
-can get through `1,500-2,500 words` per day. In addition, our translation 
-process can be performed by more than one translator to accelerate the 
+can get through up to `2,500 words` per day. In addition, we use 
+translation memory tools and collaborative translation to accelerate the 
 job execution.
-{: class="rtext content-en home" style="padding-top: 3%;"}  
+{: class="rtext content-en home" style="padding-top: 5%;"}  
 
 </div>  
 </div>
 
 <div class="section virgin-america">
 <div class="wrapper">
-<span class="open-sans content-id">Dapatkan Penawaran Kami</span><span class="open-sans content-en">Get A Quote</span>
+
+Dapatkan Penawaran Kami
+{: class="open-sans content-id"}
+Get A Free Quote
+{: class="open-sans content-en"}
 
 ![Free Quote][free-quote]  
 {: class="rimage"}  
@@ -204,7 +200,11 @@ you soon with our price and duration for the job.
 
 <div class="section dirty-fog">
 <div class="wrapper">
-<span class="open-sans content-id">Layanan Lainnya</span><span class="open-sans content-en">Other Services</span>
+
+Layanan Lainnya
+{: class="open-sans content-id"}
+Other Services
+{: class="open-sans content-en"}
 
 ![Other Services][other-services]  
 {: class="limage"}  
@@ -230,7 +230,7 @@ Kami tidak melayani penjurubahasaan untuk saat ini, tetapi kami berharap
 bisa melakukan pelayanan tersebut dalam waktu dekat. Pastikan Anda mengecek 
 kembali situs ini jika Anda membutuhkan layanan tersebut nanti.  
 {: class="ltext content-id home" style="padding-top: 6%;"}  
-We don't do interpreting at the moment, but we expect to change the 
+We don't do interpreting at the moment, but we do expect to change the 
 situation in not so distant future. Be sure to check this site back when 
 you need the service later. 
 {: class="ltext content-en home" style="padding-top: 8%;"}  

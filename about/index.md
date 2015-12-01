@@ -12,20 +12,20 @@ permalink: /about/
 {{ site.title }} {{ site.subtitle_en }}
 {: class="normal-title content-en"}
 
-SetTrans adalah sebuah perusahaan rintisan Indonesia di bidang jasa 
-penerjemahan yang memiliki satu penerjemah utama (purna waktu) dan beberapa 
-tambahan penerjemah (paruh waktu) jika diperlukan. 
-Semua penerjemah memiliki sertifikat Penerjemah Teks Umum Bahasa Inggris 
-ke Bahasa Indonesia dari [LBI FIB UI][lbi-fib-ui] dan telah mengerjakan 
-beberapa [proyek penerjemahan][portfolio].
+SetTrans adalah sebuah usaha rintisan Indonesia di bidang jasa penerjemahan 
+yang memiliki satu penerjemah utama (purna waktu) dan beberapa tambahan 
+penerjemah (paruh waktu) jika diperlukan. Semua penerjemah memiliki 
+sertifikat Penerjemah Teks Umum dan Penerjemah Teks Hukum Bahasa Inggris 
+ke Bahasa Indonesia atau sebaliknya dari [LBI FIB UI][lbi-fib-ui] dan 
+telah mengerjakan beberapa [proyek penerjemahan][portfolio].
 {: class="content-id lang-hide normal"}
-SetTrans is an Indonesian translation service startup company 
-comprising of one main (full-time) translator and several on-demand 
-(part-time) translators. 
-All translators have earned certificates for English to Indonesian 
-General Text Translator from [Lembaga Bahasa Internasional FIB Universitas 
-Indonesia][lbi-fib-ui] and completed a couple of 
-[translation projects][portfolio]. 
+SetTrans is an Indonesian translation service startup comprising of one 
+main (full-time) translator and several on-demand (part-time) 
+translators. All translators have earned certificates for English to 
+Indonesian (or vice versa) General Text Translator and Legal Text 
+Translator from [Lembaga Bahasa Internasional FIB Universitas 
+Indonesia][lbi-fib-ui] and completed a couple of [translation 
+projects][portfolio]. 
 {: class="content-en normal"}
 
 

@@ -13,19 +13,21 @@ What you will get
 {: class="normal-title content-en"}  
   
 - Terjemahan berkualitas sangat baik
-- Pengawasan terhadap pekerjaan yang sedang dilakukan melalui layanan Google
- Docs
+- Menggunakan pengingat terjemahan sehingga menghasilkan terjemahan yang 
+konsisten dan pengerjaan yang lebih cepat
+- Frekuensi laporan perkembangan sesuai permintaan klien
 - Mengomentari hasil terjemahan yang telah selesai
 - Satu kali perbaruan terjemahan berdasarkan komentar yang diberikan tanpa 
 mengurangi kualitasnya
-- Diskon progresif untuk pekerjaan lebih dari 2.000 kata
+- Diskon progresif untuk pekerjaan yang lebih dari 5.000 kata
 {: class="content-id lang-hide normal" style="text-align: justify;"}  
   
 - Great quality translation
-- Monitoring of translation progress in almost real time through Google Docs
-services
+- Using translation memory tools to produce consistent translation and 
+to execute the job more rapidly
+- Frequent progress report as per client request
 - Comment on translated texts once the job is done
 - One time translation revision based on comments without degrading the 
 quality
-- Progressive discount if the job is more than 2,000 words
+- Progressive discounts for job with more than 5,000 words
 {: class="content-en normal" style="text-align: justify;"}  

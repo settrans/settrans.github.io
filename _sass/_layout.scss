@@ -82,6 +82,10 @@ html, body {
     color: $red-color-dark;
     float: left;
     margin-bottom: -28px;
+	 -webkit-transition: text-shadow 1s ease;
+	 -moz-transition: text-shadow 1s ease;
+	 -o-transition: text-shadow 1s ease;
+	 transition: text-shadow 1s ease;
 
     &:hover {
        text-decoration: none;
@@ -210,6 +214,14 @@ html, body {
    border-radius: 4px;
    padding: 4% 5% 2% 5%;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px 0px;
+	-webkit-transition: box-shadow 1s ease;
+	-moz-transition: box-shadow 1s ease;
+	-o-transition: box-shadow 1s ease;
+	transition: box-shadow 1s ease;
+
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 12px 0px;
+	}
 }
 
 .rimage {
@@ -641,6 +653,8 @@ html, body {
 	margin: 1.5% 1%;
 	padding: 2%;
 	-webkit-transition: box-shadow 1s; /* Safari */
+	-moz-transition: box-shadow 1s; /* Safari */
+	-o-transition: box-shadow 1s; /* Safari */
 	transition: box-shadow 1s;
 
 	@include media-query($on-laptop){
@@ -656,7 +670,7 @@ html, body {
 
 .price-general {
 	font-family: "Open Sans";
-	font-size: 50px;
+	font-size: 48px;
 	font-weight: 600;
 	color: #48555b;
 
@@ -667,7 +681,7 @@ html, body {
 
 .price-special {
 	font-family: "Open Sans";
-	font-size: 50px;
+	font-size: 48px;
 	font-weight: 600;
 	color: #db573c;
 
@@ -714,6 +728,29 @@ html, body {
 	&:hover {
 		border-radius: 18px;
 		background-color: #6a9234;
+	}
+}
+
+.price-footnote {
+	float: none;
+	clear: both;
+	width: 97%;
+	padding: 5% 3% 0 3%;
+	margin-bottom: -5%;
+	line-height: 2;
+
+	p {
+		font-size: 0.8rem;
+		color: #48555b;
+		opacity: 0.6;
+		-webkit-transition: opacity 2.5s linear;
+		-moz-transition: opacity 2.5s linear;
+		-o-transition: opacity 2.5s linear;
+		transition: opacity 2.5s linear;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 
@@ -774,11 +811,11 @@ html, body {
 }
 
 .current {
-  margin-top: -11px !important;
-  margin-bottom: -11px !important;
-  border-bottom: 3px solid rgba(255,255,255,0.9) !important;
-  padding-top: 11px !important;
-  padding-bottom: 11px !important;
+  margin-top: -9px !important;
+  margin-bottom: -9px !important;
+  border-bottom: 5px solid rgba(255,255,255,0.9) !important;
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
 }
 
 .site-nav {
@@ -803,6 +840,11 @@ html, body {
         text-decoration: none;
 		  text-transform: uppercase;
         padding: 0 10px;
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -820,11 +862,11 @@ html, body {
 
         &:hover,
         &:active {
-			  margin-top: -11px;
-			  margin-bottom: -11px;
-           border-bottom: 3px solid rgba(204,6,24,0.8);
-			  padding-top: 11px;
-			  padding-bottom: 11px;
+			  margin-top: -9px;
+			  margin-bottom: -9px;
+           border-bottom: 5px solid rgba(204,6,24,0.8);
+			  padding-top: 9px;
+			  padding-bottom: 9px;
 
            @include media-query($on-palm) {
               border-bottom: none;
@@ -932,19 +974,23 @@ html, body {
 .footer-col-1 {
     width: -webkit-calc(40% - (#{$spacing-unit} / 2));
     width:         calc(40% - (#{$spacing-unit} / 2));
+
+	 a {
+		 
+		 &:hover,
+		 &:active {
+			 color: #db573c;
+			 opacity: 0.8;
+		 }
+	 }
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
     width: -webkit-calc(60% - (#{$spacing-unit} / 2));
     width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-4 {
+.footer-col-3 {
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
     text-align: center;
@@ -956,18 +1002,17 @@ html, body {
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
+    .footer-col-1 {
         width: -webkit-calc(40% - (#{$spacing-unit} / 2));
         width:         calc(40% - (#{$spacing-unit} / 2));
     }
 
-    .footer-col-3 {
+    .footer-col-2 {
         width: -webkit-calc(60% - (#{$spacing-unit} / 2));
         width:         calc(60% - (#{$spacing-unit} / 2));
     }
 
-    .footer-col-4 {
+    .footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }

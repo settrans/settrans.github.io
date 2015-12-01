@@ -30,10 +30,10 @@ etc.
 
 
 <div class="great-offer">  
-<span class="price-special">Rp 330,00 - 550,00<span>
+<span class="price-special">Rp 330,00 - 550,00*<span>
 <span class="normal">/kata</span> 
 {: class="content-id lang-hide"}
-<span class="price-special">US$0.030 - 0.050<span>
+<span class="price-special">US$0.03 - 0.05*<span>
 <span class="normal">/word</span> 
 {: class="content-en"}
 
@@ -43,16 +43,30 @@ Specialized Texts
 {: class="normal-title content-en" style="text-align: left;"}
 
 Untuk dokumen, artikel, karya ilmiah, buku, atau buku panduan untuk bidang 
-yang khusus seperti kimia (mis: MSDS), TI, sains, teknik, keuangan, hukum 
-(mis: sertifikat, surat perjanjian), dll.   
+yang khusus seperti kimia (contoh: MSDS), TI, teknik, keuangan, hukum** 
+(conttoh: sertifikat, surat perjanjian), dll.   
 <span class="hire-btn-spec">[Sewa Jasa Kami][hire-us]</span>
 {: class="content-id lang-hide normal"}  
 For documents, articles, papers, books, or instruction manuals with a 
-specialized subject such as chemistry (eg: MSDS), IT, science, engineering, 
-finance, legal (eg: certificate, contract), etc.  
+specialized subject such as chemistry (e.g. MSDS), IT, engineering, 
+finance, legal** (e.g. certificate, contract), etc.  
 <span class="hire-btn-spec">[Hire Us Now][hire-us]</span>
 {: class="content-en normal"}  
-</div>
+</div>  
 
+<div class="price-footnote">
+\* _Oleh karena tiap dokumen berbeda-beda, kami perlu melihat isinya
+terlebih dahulu agar dapat menentukan harga pastinya per kata._  
+\** _Jika jumlah kata dalam satu halaman teks hukum kurang dari 220, 
+maka harga penerjemahan halaman tersebut akan dibulatkan menjadi 220 kata 
+dikalikan dengan harganya per kata._
+{: class="content-id lang-hide"}
+\* _Due to the very specific nature of each document, we need to see the 
+content first before we can set the exact price per word._  
+\** _If the number of words in a legal text page is less than 220, the 
+cost of translating the page will be rounded up to 220 words multiplied by 
+the price per word of that page._
+{: class="content-en"}
+</div>
 
 [hire-us]: mailto:settrans.eits@gmail.com

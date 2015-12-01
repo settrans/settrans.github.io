@@ -1,20 +1,11 @@
 ---
-layout: default
+layout: npage
 title: Portfolio
 menu: true
 permalink: /portfolio/
 ---
 
 {::options parse_block_html="true" /}
-<script>
-   $(document).ready(function($) {
-      $('.page-content').closest('div.wrapper').removeClass('wrapper');
-      $('.section').wrapInner('<div class="wrapper"></div>');
-      $('.section .wrapper').wrapInner('<div class="npage-1-col"></div>');
-   });
-</script>
-
-<div class="section white npage">
 
 Projects that were subcontracted to us include
 {: class="normal-title content-en"}
@@ -40,5 +31,3 @@ ke Bahasa Inggris`
 Konservasi Hutan dari Pihak Swasta (Pelatihan Penebangan Berdampak Minimal 
 dan Keanekaragaman Hayati)" => `Bahasa Inggris ke Bahasa Indonesia`
 {: class="content-id lang-hide normal" style="text-align: justify;"}
-
-</div>

@@ -206,10 +206,10 @@ html, body {
 }
 
 .npage-1-col {
-   background-color: #fefefe;
-   border-radius: 5px;
+   background-color: white;
+   border-radius: 4px;
    padding: 4% 5% 2% 5%;
-   box-shadow: 1px 2px 15px rgba(0,0,0,0.25);
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px 0px;
 }
 
 .rimage {
@@ -417,7 +417,8 @@ html, body {
 
    .normal {
       font-family: Roboto,sans-serif;
-      text-align: center;
+		font-size: 16px;
+      text-align: left;
       line-height: 2;
       letter-spacing: 0.5px;
       color: rgba(0,0,0,0.71);
@@ -613,10 +614,107 @@ html, body {
 }
 
 .white {
-   background-color: #ffffff;
-   background-image: url(/images/text-bg.png);
-   background-repeat: repeat;
+   background-color: #f5f7fa;
    padding: 0% -12%;
+}
+
+.nice-offer {
+	float: left;
+	width: 35%;
+	margin: 0 1%;
+	padding: 2%;
+
+	@include media-query($on-laptop){
+		float: none;
+		width: 90%;
+		margin: 1.5% 1%;
+		padding: 4%;
+	}
+}
+
+.great-offer {
+	background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px 0px;
+	border-radius: 4px;
+	float: right;
+	width: 52%;
+	margin: 1.5% 1%;
+	padding: 2%;
+	-webkit-transition: box-shadow 1s; /* Safari */
+	transition: box-shadow 1s;
+
+	@include media-query($on-laptop){
+		float: none;
+		width: 90%;
+		padding: 4%;
+	}
+
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px 0px;
+	}
+}
+
+.price-general {
+	font-family: "Open Sans";
+	font-size: 50px;
+	font-weight: 600;
+	color: #48555b;
+
+	@include media-query($on-palm){
+		font-size: 30px;
+	}
+}
+
+.price-special {
+	font-family: "Open Sans";
+	font-size: 50px;
+	font-weight: 600;
+	color: #db573c;
+
+	@include media-query($on-palm){
+		font-size: 30px;
+	}
+}
+
+.hire-btn-gen a {
+	line-height: 8;
+	background-color: #48555b;
+	text-shadow: none;
+	color: #f5f7fa !important;
+	text-decoration: none;
+	padding: 10px 20px;
+	vertical-align: middle;
+	border-radius: 15px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	&:hover {
+		border-radius: 18px;
+		background-color: #6a9234;
+		color: white;
+	}
+}
+
+.hire-btn-spec a {
+	line-height: 4;
+	background-color: #db573c;
+	text-shadow: none;
+	color: white !important;
+	text-decoration: none;
+	padding: 10px 20px;
+	vertical-align: middle;
+	border-radius: 15px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	&:hover {
+		border-radius: 18px;
+		background-color: #6a9234;
+	}
 }
 
 .darkred {
@@ -629,6 +727,7 @@ html, body {
   background: $red-color-dark;
   -webkit-border-radius: 1;
   -moz-border-radius: 1;
+  -o-border-radius: 1;
   border-radius: 1px;
   border: 1px solid $red-color-dark;
   font-family: Arial;
@@ -661,11 +760,12 @@ html, body {
         display: block;
      }
   }
-}
 
-#lang-button:hover {
-  background-color: white;
-  color: $red-color-dark;
+  &:hover {
+	  border-radius: 3px;
+	  background-color: white;
+	  color: $red-color-dark;
+  }
 }
 
 #lang-button:active {
@@ -674,11 +774,11 @@ html, body {
 }
 
 .current {
-  margin-top: -9px;
-  margin-bottom: -9px;
-  border-bottom: 3px solid rgba(204,6,24,0.8);
-  padding-top: 9px;
-  padding-bottom: 9px;
+  margin-top: -11px !important;
+  margin-bottom: -11px !important;
+  border-bottom: 3px solid rgba(255,255,255,0.9) !important;
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
 }
 
 .site-nav {
@@ -696,9 +796,9 @@ html, body {
     }
 
     .page-link {
-        color: rgba(255,255,255,0.8);
+        color: rgba(255,255,255,0.9);
         line-height: $base-line-height;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         text-shadow: 1px 1px 4px rgba(238,238,255,0.2);
         text-decoration: none;
 		  text-transform: uppercase;
@@ -720,11 +820,11 @@ html, body {
 
         &:hover,
         &:active {
-			  margin-top: -9px;
-			  margin-bottom: -9px;
+			  margin-top: -11px;
+			  margin-bottom: -11px;
            border-bottom: 3px solid rgba(204,6,24,0.8);
-			  padding-top: 9px;
-			  padding-bottom: 9px;
+			  padding-top: 11px;
+			  padding-bottom: 11px;
 
            @include media-query($on-palm) {
               border-bottom: none;

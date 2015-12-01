@@ -1,20 +1,11 @@
 ---
-layout: default
+layout: npage
 title: Our Services
 menu: true
 permalink: /our-services/
 ---
 
 {::options parse_block_html="true" /}
-<script>
-   $(document).ready(function($) {
-      $('.page-content').closest('div.wrapper').removeClass('wrapper');
-      $('.section').wrapInner('<div class="wrapper"></div>');
-      $('.section .wrapper').wrapInner('<div class="npage-1-col"></div>');
-   });
-</script>
-
-<div class="section white npage">
 
 Untuk Anda
 {: class="normal-title content-id lang-hide"}
@@ -38,5 +29,3 @@ services
 quality
 - Progressive discount if the job is more than 2,000 words
 {: class="content-en normal" style="text-align: justify;"}  
-
-</div>

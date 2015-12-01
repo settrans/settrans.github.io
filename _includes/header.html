@@ -33,7 +33,9 @@
   </div>
 
   <script>
-      $(document).ready(function() {
+		$(document).ready(function() {
+			$(".site-nav a[href='"+location.pathname+"']")
+				.addClass('current');
          //set default content language to hide
          $('.content-id').hide();
 

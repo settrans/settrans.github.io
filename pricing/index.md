@@ -1,48 +1,58 @@
 ---
-layout: default
+layout: price
 title: Pricing
 menu: true
 permalink: /pricing/
 ---
 
 {::options parse_block_html="true" /}
-<script>
-   $(document).ready(function($) {
-      $('.page-content').closest('div.wrapper').removeClass('wrapper');
-      $('.section').wrapInner('<div class="wrapper"></div>');
-      $('.section .wrapper').wrapInner('<div class="npage-1-col"></div>');
-   });
-</script>
-
-<div class="section white npage">
+<div class="nice-offer">
+<span class="price-general">Rp 330,00<span>
+<span class="normal">/kata</span> 
+{: class="content-id lang-hide normal"}
+<span class="price-general">US$0.030<span>
+<span class="normal">/word</span> 
+{: class="content-en normal"}
 
 Teks Umum
-{: class="normal-title content-id lang-hide"}
+{: class="normal-title content-id lang-hide" style="text-align: left;"}
 General Texts
-{: class="normal-title content-en"}
-`Rp 300,-/kata`   
-{: class="content-id lang-hide normal"}
-`0.027 USD/word`  
-{: class="content-en normal"}
-  
-<br />  
+{: class="normal-title content-en" style="text-align: left;"}
 
-Teks Khusus 
-{: class="normal-title content-id lang-hide"}
-Niche Subject Texts  
-{: class="normal-title content-en"}
-
-Untuk dokumen/artikel/karya ilmiah/buku di bidang yang khusus seperti TI, 
-sains, teknik, keuangan, dll.   
-`Rp 300,- hingga Rp 550,- per kata`    
-[Hubungi kami][contact-us] untuk harga pastinya.   
+Untuk mayoritas situs, aplikasi web, aplikasi ponsel, artikel berita, dll.  
+<span class="hire-btn-gen">[Sewa Jasa Kami][hire-us]</span>
 {: class="content-id lang-hide normal"}  
-For documents/article/paper/book with a specialized subject such as 
-IT, science, engineering, finance, etc.  
-`0.027-0.050 USD/word`  
-[Contact us][contact-us] to get the exact price.  
+For the majority of websites, web apps, smartphone apps, news articles, 
+etc.  
+<span class="hire-btn-gen">[Hire Us Now][hire-us]</span>
 {: class="content-en normal"}  
-
 </div>
 
-[contact-us]: mailto:settrans.eits@gmail.com
+
+<div class="great-offer">  
+<span class="price-special">Rp 330,00 - 550,00<span>
+<span class="normal">/kata</span> 
+{: class="content-id lang-hide"}
+<span class="price-special">US$0.030 - 0.050<span>
+<span class="normal">/word</span> 
+{: class="content-en"}
+
+Teks Khusus
+{: class="normal-title content-id lang-hide" style="text-align: left;"}
+Specialized Texts
+{: class="normal-title content-en" style="text-align: left;"}
+
+Untuk dokumen, artikel, karya ilmiah, buku, atau buku panduan untuk bidang 
+yang khusus seperti kimia (mis: MSDS), TI, sains, teknik, keuangan, hukum 
+(mis: sertifikat, surat perjanjian), dll.   
+<span class="hire-btn-spec">[Sewa Jasa Kami][hire-us]</span>
+{: class="content-id lang-hide normal"}  
+For documents, articles, papers, books, or instruction manuals with a 
+specialized subject such as chemistry (eg: MSDS), IT, science, engineering, 
+finance, legal (eg: certificate, contract), etc.  
+<span class="hire-btn-spec">[Hire Us Now][hire-us]</span>
+{: class="content-en normal"}  
+</div>
+
+
+[hire-us]: mailto:settrans.eits@gmail.com

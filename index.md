@@ -16,13 +16,13 @@ layout: default
                .content-en, \
                #down-arrows, \
                .site-nav, \
-               #lang-button').velocity("fadeIn", {duration: 6000});
+               #lang-button').fadeIn(6000);
             $("#bg2")
                .delay(1200)
                .fadeOut(800, function(){
                   $("#bg3")
                      .delay(1200)
-                     .velocity("fadeOut", {duration: 800});
+                     .fadeOut(800);
                });
          });
    }
@@ -148,7 +148,7 @@ with great accuracy for your texts at [competitive prices][price].
 </div>
 
 <div class="section ash">
-<div class="wrapper">
+<div class="wrapper" style="margin-top: -120px;">
 
 Penerjemah
 {: class="open-sans content-id"}
@@ -173,7 +173,7 @@ job execution.
 </div>
 
 <div class="section virgin-america">
-<div class="wrapper">
+<div class="wrapper" style="margin-top: -120px;">
 
 Dapatkan Penawaran Kami
 {: class="open-sans content-id"}
@@ -199,7 +199,7 @@ you soon with our price and duration for the job.
 </div>
 
 <div class="section dirty-fog">
-<div class="wrapper">
+<div class="wrapper" style="margin-top: -120px;">
 
 Layanan Lainnya
 {: class="open-sans content-id"}
@@ -211,16 +211,16 @@ Other Services
   
 Selain menerjemahkan, kami juga melayani `penyuntingan` dan `pengoreksian` 
 hasil terjemahan Anda. Tarif pekerjaan tersebut juga dibebankan per kata.
-{: class="rtext content-id home" style="padding-top: 5%;"}  
+{: class="rtext content-id home" style="padding-top: 6%;"}  
 In addition to translating, we also do `editing` and `proofreading` for 
 your translation texts. These jobs also charge by word count.
-{: class="rtext content-en home" style="padding-top: 7%;"}  
+{: class="rtext content-en home" style="padding-top: 6%;"}  
 
 </div>  
 </div>
 
 <div class="section midnight-city">
-<div class="wrapper">
+<div class="wrapper" style="margin-top: -120px;">
 <span class="open-sans content-id">Penjurubahasaan</span><span class="open-sans content-en">Interpreting</span>
 
 ![Interpreting][interpreting]  

@@ -1,21 +1,11 @@
 ---
-layout: default
+layout: npage
 title: About
 menu: true
 permalink: /about/
 ---
 
 {::options parse_block_html="true" /}
-<head>
-<script>
-	$(document).ready(function() {
-	});
-</script>
-</head>
-
-<div class="section white npage">
-<div class="wrapper">
-<div class="npage-1-col">
 
 {{ site.subtitle_id }} {{ site.title }}
 {: class="normal-title content-id lang-hide"}
@@ -37,10 +27,6 @@ General Text Translator from [Lembaga Bahasa Internasional FIB Universitas
 Indonesia][lbi-fib-ui] and completed a couple of 
 [translation projects][portfolio]. 
 {: class="content-en normal"}
-
-</div>
-</div>
-</div>
 
 
 [lbi-fib-ui]: http://lbifib.ui.ac.id/ "LBI FIB UI" 

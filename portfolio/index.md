@@ -10,11 +10,11 @@ permalink: /portfolio/
 Projects that were subcontracted to us include
 {: class="normal-title content-en"}
 
-1. 40 pages of **2014 Annual Report of PT Angkasa Pura** (Indonesian state 
+1. **2014 Annual Report of PT Angkasa Pura** (Indonesian state 
 enterprise for airport management) => `Indonesian to 
 English`  
   
-2. 21 pages of **USAID IFACS Lessons Learned Technical Briefing**: 
+2. **USAID IFACS Lessons Learned Technical Briefing**: 
 "Conservation Management and Monitoring Plans (CMMP) and Private Sector 
 Forest Conservation Support (Reduced Impact Logging and Biodiversity 
 Training)" => `English to Indonesian`

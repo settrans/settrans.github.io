@@ -56,13 +56,15 @@ finance, legal** (e.g. certificate, contract), etc.
 
 <div class="price-footnote">
 \* _Oleh karena tiap dokumen berbeda-beda, kami perlu melihat isinya
-terlebih dahulu agar dapat menentukan harga pastinya per kata._  
+terlebih dahulu agar dapat menentukan harga pastinya per kata dengan harga 
+maksimum Rp 550,-._  
 \** _Jika jumlah kata dalam satu halaman teks hukum kurang dari 220, 
 maka harga penerjemahan halaman tersebut akan dibulatkan menjadi 220 kata 
 dikalikan dengan harganya per kata._
 {: class="content-id lang-hide"}
 \* _Due to the very specific nature of each document, we need to see the 
-content first before we can set the exact price per word._  
+content first before we can set the exact price per word with the ceiling 
+price of US$0.05._  
 \** _If the number of words in a legal text page is less than 220, the 
 cost of translating the page will be rounded up to 220 words multiplied by 
 the price per word of that page._

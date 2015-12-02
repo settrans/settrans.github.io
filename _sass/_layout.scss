@@ -652,10 +652,10 @@ html, body {
 	width: 52%;
 	margin: 1.5% 1%;
 	padding: 2%;
-	-webkit-transition: box-shadow 1s; /* Safari */
-	-moz-transition: box-shadow 1s; /* Safari */
-	-o-transition: box-shadow 1s; /* Safari */
-	transition: box-shadow 1s;
+	-webkit-transition: box-shadow 1s ease;
+	-moz-transition: box-shadow 1s ease;
+	-o-transition: box-shadow 1s ease;
+	transition: box-shadow 1s ease;
 
 	@include media-query($on-laptop){
 		float: none;
@@ -740,6 +740,8 @@ html, body {
 	line-height: 2;
 
 	p {
+		border-top-right-radius: 40px;
+		border-bottom-right-radius: 40px;
 		font-size: 0.8rem;
 		color: #48555b;
 		opacity: 0.6;

@@ -31,8 +31,8 @@ kami apakah layanan kami mencakup teks Anda!
 - Menggunakan pengingat terjemahan OmegaT sehingga menghasilkan terjemahan 
 yang konsisten dan pengerjaan yang lebih cepat
 - Laporan perkembangan sesering yang klien minta
-- Perbaruan berkas-berkas yang sedang diterjemahkan setiap kali terjadi 
-pengiriman perubahan ke server kami oleh penerjemah
+- Perbaruan berkas-berkas yang sedang diterjemahkan setiap kali perubahan 
+dikirim ke server kami oleh penerjemah
 - Diskon progresif untuk pekerjaan yang lebih dari 5.000 kata
 {: class="content-id lang-hide normal" style="text-align: justify;"}  
   
@@ -42,7 +42,7 @@ your text is covered!
 - Using OmegaT translation memory tool to produce consistent translation 
 and to execute the job more rapidly
 - Frequent progress report as per client request
-- Update on files being translated every time the files are submitted to 
+- Update on files being translated every time changes are submitted to 
 our server by the translators
 - Progressive discounts for job with more than 5,000 words
 {: class="content-en normal" style="text-align: justify;"}  

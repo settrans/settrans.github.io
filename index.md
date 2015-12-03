@@ -129,6 +129,7 @@ or vice versa?
 <div class="section passion">
 <div class="wrapper" style="margin-top: -120px;">
 
+TETAP TENANG <span class="sml">DAN</span> SEWA JASA KAMI!  
 Kami dapat memberikan Anda  
 {: class="content-id home-text"}
 Layanan Penerjemahan Bahasa Indonesia-Inggris
@@ -137,6 +138,7 @@ yang cepat untuk teks Anda dengan akurasi tinggi dengan [harga yang
 bersaing][price]. 
 {: class="content-id home-text"}
 
+KEEP CALM <span class="sml">AND</span> HIRE US!  
 We can give you rapid  
 {: class="content-en home-text"}
 English-Indonesian Translation Services

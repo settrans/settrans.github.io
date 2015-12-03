@@ -28,24 +28,27 @@ What our clients receive from us?
 - Terjemahan berkualitas sangat baik
 - Cakupan yang luas untuk layanan penerjemahan teks khusus. [Tanya][ask-us] 
 kami apakah layanan kami mencakup teks Anda!
-- Menggunakan pengingat terjemahan OmegaT sehingga menghasilkan terjemahan 
-yang konsisten dan pengerjaan yang lebih cepat
+- Menggunakan pengingat terjemahan [OmegaT][omegat-id] sehingga 
+menghasilkan terjemahan yang konsisten dan pengerjaan yang lebih cepat
 - Laporan perkembangan sesering yang klien minta
 - Perbaruan berkas-berkas yang sedang diterjemahkan setiap kali perubahan 
-dikirim ke server kami oleh penerjemah
+dikirim ke server kami oleh penerjemah (menggunakan teknologi [Git][git])
 - Diskon progresif untuk pekerjaan yang lebih dari 5.000 kata
 {: class="content-id lang-hide normal" style="text-align: justify;"}  
   
 - Great quality translation
-- Wide range of specialized text translation services. [Ask us][ask-us] if 
+- A wide range of specialized text translation services. [Ask us][ask-us] if 
 your text is covered!
-- Using OmegaT translation memory tool to produce consistent translation 
-and to execute the job more rapidly
+- Using [OmegaT][omegat-en] translation memory tool to produce consistent 
+translation and to execute the job more rapidly
 - Frequent progress report as per client request
 - Update on files being translated every time changes are submitted to 
-our server by the translators
+our server by the translators (using [Git][git] technology)
 - Progressive discounts for job with more than 5,000 words
 {: class="content-en normal" style="text-align: justify;"}  
 
 
 [ask-us]: mailto:settrans.eits@gmail.com
+[omegat-id]: http://www.omegat.org/id/omegat.html
+[omegat-en]: http://www.omegat.org/en/omegat.html
+[git]: https://git-scm.com/

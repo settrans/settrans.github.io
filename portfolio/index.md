@@ -6,6 +6,20 @@ permalink: /portfolio/
 ---
 
 {::options parse_block_html="true" /}
+<head>
+<style>
+ol { margin-left: 100px; }
+li { font-size: 3em; 
+     font-style: italic;
+}
+ol p { display: inline-block; 
+       vertical-align: text-top; 
+       font-size: 0.33em; 
+       font-style: normal;
+       padding-left: 1em; 
+}
+</style>
+</head>
 
 Projects that were subcontracted to us include
 {: class="normal-title content-en"}
@@ -23,10 +37,10 @@ Training)" => `English to Indonesian`
 Proyek-proyek subkontrak yang telah kami kerjakan
 {: class="normal-title content-id lang-hide"}
 
-1. 40 halaman **Laporan Tahunan 2014 PT Angkasa Pura** => `Bahasa Indonesia 
-ke Bahasa Inggris`  
+1. **Laporan Tahunan 2014 PT Angkasa Pura** => `Bahasa Indonesia ke Bahasa 
+Inggris`  
   
-2. 21 halaman **Pengarahan Teknis Mengenai Pembelajaran USAID IFACS**: 
+2. **Pengarahan Teknis Mengenai Pembelajaran USAID IFACS**: 
 "Rencana Pengelolaan dan Pemantauan Konservasi (CMMP) dan Dukungan 
 Konservasi Hutan dari Pihak Swasta (Pelatihan Penebangan Berdampak Minimal 
 dan Keanekaragaman Hayati)" => `Bahasa Inggris ke Bahasa Indonesia`

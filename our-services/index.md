@@ -6,6 +6,19 @@ permalink: /our-services/
 ---
 
 {::options parse_block_html="true" /}
+<head>
+<style>
+ul {
+   list-style-type: none;
+}
+li {
+   background-image: url(/images/tick.png);
+   background-repeat: no-repeat;
+   background-position: 0 0.1em;
+   padding-left: 2.6em;
+}
+</style>
+</head>
 
 Layanan Kami
 {: class="normal-title content-id lang-hide"}

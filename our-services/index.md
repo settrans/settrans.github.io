@@ -20,9 +20,9 @@ li {
 </style>
 </head>
 
-Layanan Kami
+Apa yang yang diterima oleh klien kami?
 {: class="normal-title content-id lang-hide"}
-Our Services
+What our clients receive from us?
 {: class="normal-title content-en"}  
   
 - Terjemahan berkualitas sangat baik
@@ -30,10 +30,9 @@ Our Services
 kami apakah layanan kami mencakup teks Anda!
 - Menggunakan pengingat terjemahan OmegaT sehingga menghasilkan terjemahan 
 yang konsisten dan pengerjaan yang lebih cepat
-- Frekuensi laporan perkembangan sesuai permintaan klien
-- Hak untuk mengomentari hasil terjemahan yang telah selesai
-- Satu kali perbaruan terjemahan berdasarkan komentar yang diberikan tanpa 
-mengurangi kualitasnya
+- Laporan perkembangan sesering yang klien minta
+- Perbaruan berkas-berkas yang sedang diterjemahkan setiap kali terjadi 
+pengiriman perubahan ke server kami oleh penerjemah
 - Diskon progresif untuk pekerjaan yang lebih dari 5.000 kata
 {: class="content-id lang-hide normal" style="text-align: justify;"}  
   
@@ -43,9 +42,8 @@ your text is covered!
 - Using OmegaT translation memory tool to produce consistent translation 
 and to execute the job more rapidly
 - Frequent progress report as per client request
-- Privilege to comment on translated texts once the job is done
-- One time translation revision based on comments without degrading the 
-quality
+- Update on files being translated every time the files are submitted to 
+our server by the translators
 - Progressive discounts for job with more than 5,000 words
 {: class="content-en normal" style="text-align: justify;"}  
 
